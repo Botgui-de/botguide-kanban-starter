@@ -26,5 +26,5 @@ judgment. A blank section on a two-week build is not believable._
 
 ## How someone else could break this
 
-_Try it. Can a contractor reach something that belongs to Shane? Can you change a URL and
+_Try it. Can a contractor reach something that belongs to the client? Can you change a URL and
 see someone else's data? What happens if you submit an empty form?_

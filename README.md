@@ -71,7 +71,7 @@ fix(0001): contractor could see another contractor's rate
 
 **No code until `prd.md` says APPROVED.**
 
-Ryan approves everyone's `0001` personally. Send him `ask.md` and `prd.md` by **Thursday September 18**.
+Your `0001` is approved personally, by the person who set you this. Send `ask.md` and `prd.md` by **Thursday September 18**.
 
 Getting there is a conversation, not a document you write once. You describe the problem, the bot writes a plan, you read it, you push back, it revises. You keep going until there are no holes.
 

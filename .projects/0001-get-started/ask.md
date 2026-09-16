@@ -1,6 +1,6 @@
 # 0001 Get Started - The Ask
 
-> Write this BEFORE you open the bot. In your own words. Do not paste Ryan's brief in here.
+> Write this BEFORE you open the bot. In your own words. Do not paste the brief in here.
 >
 > Restating the ask yourself is the first real test: if you cannot say what you are building
 > without looking at his email, you do not understand it yet. Delete this block when you write.
@@ -20,7 +20,7 @@ are committing to - but be careful. Everything you add here is something you hav
 
 ## What I am deliberately NOT building
 
-_This list matters as much as the one above. It is the one Ryan asks about first at demos:
+_This list matters as much as the one above. It is the one asked about first at demos:
 "What did you decide not to build, and why?"_
 
 ## Questions I need answered before I start

@@ -25,7 +25,7 @@ _What it does not. Name the things a reasonable person might assume were include
 
 ## The people and what each can do
 
-_Ryan (owner) / a contractor / Shane (client). What each can see and do, and what each must
+_The owner / a contractor / the client. What each can see and do, and what each must
 never see._
 
 ## Screens
@@ -52,5 +52,5 @@ _Anything still unanswered. An approved PRD should have none left._
 _How we will know this box can close._
 
 - [ ] The portal runs locally
-- [ ] I can log in as Ryan, as a contractor, and as Shane
+- [ ] I can log in as the owner, as a contractor, and as the client
 - [ ]

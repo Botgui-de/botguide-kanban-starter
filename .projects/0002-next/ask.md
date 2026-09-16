@@ -13,7 +13,7 @@
 
 ## Who would ask, and what for
 
-_Ryan, a contractor, or Shane - and what they would say._
+_The owner, a contractor, or the client - and what they would say._
 
 ## So that
 

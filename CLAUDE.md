@@ -92,6 +92,31 @@ When you make a choice they didn't specify — a library, a pattern, a shape of 
 
 If they ask you to explain something you generated, explain what it does and say plainly which parts you are least confident are correct.
 
+## Keep FEEDBACK.md current — this is your job, not theirs
+
+`FEEDBACK.md` at the repo root records where *our instructions* failed, and
+which skills got used. It is not scored and it is not part of their box. They
+will forget it exists; you will not.
+
+**Append a row whenever any of these happens, without being asked:**
+
+- They say an instruction was confusing, ambiguous, or wrong — including in
+  passing, including as a joke, including "wait, so do I..."
+- They look for something that isn't there, or ask you a question this repo
+  should already have answered
+- Two of our files contradict each other
+- They get stuck for a while, or nearly give up
+- **A skill is invoked** — `/team-onboarding` or any other. Log which, what
+  for, and whether it actually helped. Log it when it did *not* help; that is
+  the more useful row.
+
+Write it in their words, not yours. Do not soften it, do not turn a complaint
+into a suggestion, and do not leave it out because it sounds like criticism of
+the people running this — that is exactly what the file is for.
+
+Then tell them you logged it, in one line, and carry on with what they were
+doing. Do not turn it into a conversation.
+
 ## What not to do
 
 - Don't start coding before the PRD is approved.

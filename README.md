@@ -137,6 +137,12 @@ Ask yourself two things, and write the answers down:
 
 Answer those for yourself first. Most questions dissolve at that point, because you already know what you would want. The ones that survive are the good ones, and those are exactly the ones we want to hear.
 
+## Tell us what didn't make sense
+
+**[`FEEDBACK.md`](FEEDBACK.md)** is where you record where *these instructions* let you down, and which AI skills you used. It is **not scored** — it is not part of your box and it has no bearing on anything.
+
+You are the first three people to use any of this. Where it is confusing or wrong, that is our defect, and writing it down while it is annoying you is the only way we find out. Your assistant will offer to log things as you go; let it. Blunt is useful.
+
 ## Submitting
 
 **Push your work to your fork and send the link.** That is the whole submission.
@@ -147,6 +153,6 @@ git push
 
 > Push as you go, not once at the end. The commit history is part of what gets read — a single commit saying "done" tells us nothing about how you worked, and it is the how we are looking at.
 
-Make sure `log.md`, `test.md` and `audit.md` are filled in and pushed. Those are read as carefully as the code.
+Make sure `log.md`, `test.md` and `audit.md` are filled in and pushed. Those are read as carefully as the code. `FEEDBACK.md` too — that one is for us.
 
 **One bonus rung, optional, noticed:** it is deployed somewhere that can be opened in a browser.

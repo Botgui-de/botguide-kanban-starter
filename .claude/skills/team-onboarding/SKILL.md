@@ -140,6 +140,16 @@ git push
 - If they ask you to explain something you generated, explain what it does
   and say plainly which parts you are least confident are correct.
 
+## Logging friction as you go
+
+You are the first users of these instructions. **When something here confuses
+them, append a row to `FEEDBACK.md` at the repo root** — what didn't make
+sense, where, and how they'd fix it, in their words. Also log every skill they
+invoke, including this one, and whether it helped.
+
+Say you logged it, in one line, then carry on. It is not scored and it is not
+part of their box.
+
 ## Closing the box
 
 "Done" is not "I finished typing." Before they call it finished:
@@ -151,6 +161,8 @@ git push
       do not understand yet
 - [ ] `log.md` has the loop, the decisions, and three times they said no
 - [ ] `0002-next/ask.md` scopes the next box without building it
+- [ ] `FEEDBACK.md` has what didn't make sense, the skills they used, and
+      the one-thing answer
 - [ ] Everything is pushed to their fork
 
 The question they will be asked is always the same: **"How did you verify

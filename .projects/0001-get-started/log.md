@@ -1,6 +1,6 @@
-# 0001 Get Started - Director's Log
+# 0001 Get Started — Director's Log
 
-> One entry per turn of the loop. Short. Write it as you go - reconstructing this at the end
+> One entry per turn of the loop. Short. Write it as you go — reconstructing this at the end
 > is obvious to read and worth much less.
 >
 > You are the director. The AI is a brilliant but flawed collaborator: it has the knowledge
@@ -12,11 +12,11 @@
 ## The loop, as it happened
 
 > One line per turn. Write them as you go.
-> Format: `YYYY-MM-DD - what I was trying to do -> what happened -> what I decided`
+> Format: `YYYY-MM-DD — what I was trying to do -> what happened -> what I decided`
 
 ## Decisions
 
-_The choices you made and why. Not what the bot generated - what YOU chose._
+_The choices you made and why. Not what the bot generated — what YOU chose._
 
 ## Times I said no
 

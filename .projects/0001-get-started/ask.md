@@ -1,4 +1,4 @@
-# 0001 Get Started - The Ask
+# 0001 Get Started — The Ask
 
 > Read the brief first: [`BRIEF.md`](../../BRIEF.md) in the repo root.
 >
@@ -17,8 +17,8 @@ _The three people. For each: why they open it, what they see, and what they must
 
 ## What has to work for this box to close
 
-_The portal runs on my machine, I can log in as all three - owner, client, contractor - and
-every screen is populated with seed data. Add anything else you are committing to - but be
+_The portal runs on my machine, I can log in as all three — owner, client, contractor — and
+every screen is populated with seed data. Add anything else you are committing to — but be
 careful. Everything you add here is something you have to finish._
 
 ## What I am deliberately NOT building
@@ -37,8 +37,8 @@ _Split them. Be honest about which is which._
 >
 > Send the survivors to ryan@botgui.de and cody@botgui.de. Asking counts in your favor.
 
-**Blocking** - I cannot start until someone answers this.
+**Blocking** — I cannot start until someone answers this.
 -
 
-**Assumed** - I am proceeding this way unless someone tells me otherwise.
+**Assumed** — I am proceeding this way unless someone tells me otherwise.
 -

@@ -1,4 +1,4 @@
-# 0001 Get Started - PRD
+# 0001 Get Started — PRD
 
 **Status:** DRAFT
 <!-- DRAFT -> APPROVED by <ryan|cody> <date> -> SHIPPED <date> (tag 0001)
@@ -9,7 +9,7 @@
 > push back; it revises. Repeat until there are no holes.
 >
 > This document is a mirror. It shows you whether the bot understood the problem the way you
-> do - and it shows you whether YOU understand the problem. Delete this block when the bot
+> do — and it shows you whether YOU understand the problem. Delete this block when the bot
 > fills it in.
 
 ## Problem

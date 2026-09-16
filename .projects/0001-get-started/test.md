@@ -1,9 +1,9 @@
-# 0001 Get Started - Testing
+# 0001 Get Started — Testing
 
 **The question this file answers: does it work?**
 
 > "Done" is not "I finished typing." The question you will be asked is always the same:
-> **"How did you verify this?"** - and "I didn't" means it is not done. Delete this block.
+> **"How did you verify this?"** — and "I didn't" means it is not done. Delete this block.
 
 ## What I tested
 

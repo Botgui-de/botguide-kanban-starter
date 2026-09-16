@@ -1,4 +1,4 @@
-# 0001 Get Started - Code Audit
+# 0001 Get Started — Code Audit
 
 **The question this file answers: do I understand it?**
 *(Whether it works is `test.md`. This file is about whether you could explain it.)*
@@ -16,7 +16,7 @@ _Which files you actually opened and read line by line._
 ## What I would change
 
 _Names that are unclear. Code that is doing too much in one place. Things repeated three
-times that should exist once. You do not have to fix it - you have to see it._
+times that should exist once. You do not have to fix it — you have to see it._
 
 ## What I do not understand yet
 

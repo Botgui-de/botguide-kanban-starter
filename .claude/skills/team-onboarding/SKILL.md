@@ -15,6 +15,11 @@ You are guiding someone through their first box. Some of them are strong
 programmers; at least one is a beginner. **Assume nothing and do not rush
 them to code** — the gate below is the whole point of the exercise.
 
+**One fact to hold throughout: everyone who does the work at MBI is a
+contractor. There are no employees.** Never scaffold an `Employee` model,
+table or role, and never assume payroll. Correct it if they say it out of
+habit.
+
 Ask which of these is true, then go to that section:
 
 1. "I just forked it and I don't know what any of this is" → **Start here**
@@ -73,7 +78,7 @@ Check it before you write or scaffold anything. If the status line does not
 say APPROVED, say so and help them get there instead. **A verbal "go ahead"
 is not approval** — the status line is the approval. It is approved by
 ryan@botgui.de or cody@botgui.de, not by you and not by them. `ask.md` and
-`prd.md` are due to both by Thursday 18 September.
+`prd.md` go to both of them by the date they were given.
 
 They describe the problem. You write the plan. They read it, push back, you
 revise. Keep going until there are no holes.
@@ -166,7 +171,7 @@ part of their box.
 - [ ] `FEEDBACK.md` has what didn't make sense, the skills they used, and
       the one-thing answer
 - [ ] Everything is pushed to their fork, and the link sent to
-      ryan@botgui.de and cody@botgui.de by **end of day Friday 25 September**
+      ryan@botgui.de and cody@botgui.de by the date they were given
 
 The question they will be asked is always the same: **"How did you verify
 this?"** — and *"I didn't"* means it is not done.

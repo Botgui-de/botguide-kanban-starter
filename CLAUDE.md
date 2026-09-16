@@ -16,6 +16,21 @@ Work comes in **boxes**. A box is one scope of work that opens, gets built, and 
   chat/       raw transcripts
 ```
 
+## One fact you must not get wrong
+
+**Everyone who does the work at MBI is a contractor. There are no employees,
+and there is no plan for any.**
+
+Never generate an `Employee` model, table, type, role or label. Never write
+code or copy that assumes payroll, salary, headcount or employment status. If
+the person says "employee" out of habit, say so once and use "contractor"
+anyway.
+
+This is not a naming preference. It is how the business is structured, and an
+employee entity produces a data model that is wrong at the root — which is
+expensive to unpick later and is exactly the kind of silent decision you are
+supposed to surface rather than make.
+
 ## Two files to point them at
 
 - **`BRIEF.md`** at the repo root is what they are building from. If they have

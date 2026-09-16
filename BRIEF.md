@@ -13,9 +13,9 @@ It is deliberately short. **The gaps are the exercise.**
 ## The ask, in the owner's words
 
 > I'd like to have a portal where I can log in and the owner of MBI, or the
-> client, can log in. As the MBI owner, I can create a client and employee for
-> MBI, create a project, a task, story points, and assign it to an employee at
-> MBI. The client can log in, and he can view his projects in progress, next
+> client, can log in. As the MBI owner, I can create a client and contractor
+> for MBI, create a project, a task, story points, and assign it to a
+> contractor at MBI. The client can log in, and he can view his projects in progress, next
 > up, and backlog, and see spend and ROI per application.
 >
 > You'll be using data from what you already know about the projects and the
@@ -32,8 +32,12 @@ are getting — not because we are being coy, but because that is what a real
 request looks like when it arrives.
 
 **MBI is a software development company.** It builds software for clients.
-Everyone who does the work is a **contractor** — there are no employees, and
-the product should not model them.
+
+> **Everyone who does the work at MBI is a contractor. There are no employees,
+> and there is no plan for any.** Do not model an employee, do not call anyone
+> an employee, and do not build anything that assumes payroll. This is not a
+> naming preference — it is how the business is actually structured, and
+> getting it wrong produces the wrong data model.
 
 ---
 

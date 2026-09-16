@@ -60,7 +60,7 @@ Then write `.projects/0001-get-started/ask.md` in your own words, before you ope
 
 **No code until `prd.md` says APPROVED.**
 
-Send `ask.md` and `prd.md` to **ryan@botgui.de** and **cody@botgui.de** by **Thursday September 18**. Approval comes back from one of them — a verbal "go ahead" is not approval, and neither is the bot telling you it looks good. The status line is the approval.
+Send `ask.md` and `prd.md` to **ryan@botgui.de** and **cody@botgui.de** by the date you were given. Approval comes back from one of them — a verbal "go ahead" is not approval, and neither is the bot telling you it looks good. The status line is the approval.
 
 Getting there is a conversation, not a document you write once. You describe the problem, the bot writes a plan, you read it, you push back, it revises. You keep going until there are no holes.
 
@@ -138,7 +138,7 @@ Write the answers down. Most questions answer themselves at that point, because 
 
 ## Submitting
 
-**Push your work to your fork and send the link** to **ryan@botgui.de** and **cody@botgui.de** by **end of day Friday September 25**. That is the whole submission.
+**Push your work to your fork and send the link** to **ryan@botgui.de** and **cody@botgui.de** by the date you were given. That is the whole submission.
 
 ```bash
 git push

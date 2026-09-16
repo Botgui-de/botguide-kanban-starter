@@ -126,22 +126,15 @@ It works as soon as you open the folder and trust it. Nothing to install.
 
 **Questions are welcome and they count in your favor.** Send them to **ryan@botgui.de** and **cody@botgui.de**.
 
-### Before you ask, sit in the owner's chair
+### Before you ask, sit in all three chairs
 
-Imagine the business is yours. You run a software development company — contractors do the work, clients pay for it, and the money has to make sense at the end of the month.
+MBI is a software development company. Three people use this thing: **the owner** who runs it, **the client** who pays for it, and **the contractors** who do the work. Everything hard about the job lives in the difference between them.
 
-Ask yourself two things, and write the answers down:
+Take the question and ask it three times — **as the owner** (if this business were yours, what would you want to log into on a Monday morning, and what would make you trust the numbers enough to show a client?), **as the client** (you pay the invoices — what would you want to see, and what would annoy you to find you couldn't?), and **as a contractor** (you do the work and get paid for it — what do you need to see, and what would you be uncomfortable about a colleague seeing?).
 
-1. **What would you want to log into on a Monday morning** to create work, size it, and assign it to people on your team?
-2. **What would you want your client to be able to see** — and what would you never want them to see?
+Write the answers down. Most questions answer themselves at that point, because you already know what you'd want. The ones that survive are the good ones, and those are exactly the ones we want to hear.
 
-Answer those for yourself first. Most questions dissolve at that point, because you already know what you would want. The ones that survive are the good ones, and those are exactly the ones we want to hear.
-
-## Tell us what didn't make sense
-
-**[`FEEDBACK.md`](FEEDBACK.md)** is where you record where *these instructions* let you down, and which AI skills you used. It is **not scored** — it is not part of your box and it has no bearing on anything.
-
-You are the first three people to use any of this. Where it is confusing or wrong, that is our defect, and writing it down while it is annoying you is the only way we find out. Your assistant will offer to log things as you go; let it. Blunt is useful.
+`BRIEF.md` has more on the three of them.
 
 ## Submitting
 

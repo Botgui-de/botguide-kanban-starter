@@ -2,118 +2,121 @@
 
 **Read this, then write `.projects/0001-get-started/ask.md` in your own words.**
 
-This is the brief, not the plan. It tells you what the thing is and who it
-serves. Turning it into a plan is your job — that is `prd.md`, and it is most
-of what you are being judged on. Do not copy this document into either file.
+This is the brief, not the plan. Turning it into a plan is your job — that is
+`prd.md`, and it is most of what you are being judged on. Do not copy this
+document into either file.
+
+It is deliberately short. **The gaps are the exercise.**
 
 ---
 
-## What it is
+## The ask, in the owner's words
 
-One place for MegaBot Industries to organise the software it builds for its clients, and to show a client what they're getting for their money.
+> I'd like to have a portal where I can log in and the owner of MBI, or the
+> client, can log in. As the MBI owner, I can create a client and employee for
+> MBI, create a project, a task, story points, and assign it to an employee at
+> MBI. The client can log in, and he can view his projects in progress, next
+> up, and backlog, and see spend and ROI per application.
+>
+> You'll be using data from what you already know about the projects and the
+> time spent on the projects, and then, based on the total billing for the
+> month, apply that dollar amount as cost to that project.
+>
+> I will have all role privileges, so I can approve everything during the
+> project.
+>
+> MBI stands for MegaBot Industries.
 
-There is one client to begin with, and one client user: that client's CEO.
+That is the whole request. It is about 130 words and it is genuinely all you
+are getting — not because we are being coy, but because that is what a real
+request looks like when it arrives.
 
-## Who uses it
+**MBI is a software development company.** It builds software for clients.
+Everyone who does the work is a **contractor** — there are no employees, and
+the product should not model them.
 
-| | Why they open it | What they see | What they must never see |
-|---|---|---|---|
-| **The owner** | Run the work, prepare the client's monthly view | Everything | — |
-| **A contractor** | See the work, update assignments, report hours | All MBI work, plus their own hours and their own rate | Another contractor's hours or pay; client rates, bills, spend, ROI |
-| **The client CEO** | Understand what's being built and what it's worth | Their own work lanes, spend per application, projected ROI | Other clients; contractor hours, pay or rates; our internal finances |
+---
 
-**Everyone at MBI is a contractor.** There are no employees, and the product should not model them.
+## The three people
 
-## The screens — nine
+Everything hard about this job lives in the difference between these three.
 
-Sign In · Owner Home · Work Board · People & Rates · My Hours · Monthly Billing · Application Value · Client Home · Client Detail
+### The owner
 
-## The one story that matters
+Runs the business. Creates the work, sizes it, assigns it, approves
+everything, and prepares what the client sees each month. Sees everything,
+always.
 
-1. The owner creates the month's work, sizes it, assigns contractors.
-2. Contractors update their tasks and log the hours they expect to be paid for.
-3. The owner reviews those hours and enters the client-billable hours, which may differ. Pay and billing rates are whatever was in effect on the work date.
-4. The owner enters the month's total client invoice.
-5. Project value = billable hours × client rate. Cost allocated = invoice total × project value ÷ total project value.
-6. Project costs roll up by application, across months, to give application spend.
-7. The owner enters a low and high expected benefit. Projected ROI = (expected benefit − application spend) ÷ application spend.
-8. The client CEO signs in and sees their work lanes, spend and projected ROI.
+### The client
 
-### Three corrections to that arithmetic
+Pays the invoices. Wants to know what is being built, how it is going, and
+whether it was worth the money. Sees their own work and their own spend.
 
-| | |
-|---|---|
-| **Label the ROI cutoff** | ROI divides a forward-looking benefit by spend-to-date, so the number falls every month as costs accumulate. Show *"based on spend through &lt;date&gt;"*. One line of text; it prevents a bad client conversation. |
-| **Store whole cents** | Proportional allocation won't sum to the invoice exactly. Integers, remainder to the last project by stable ID. On a screen whose only job is telling a client what they spent, "these don't quite add up" is a credibility problem. |
-| **Contractors see their own pay** | Their own rate and their own earned amount, on **approved hours only**. Never pending, never anyone else's. They negotiated the rate; hiding it is strange, and they're the first users of this system. |
+### The contractors
 
-## Scope
+Do the work. Update their tasks, report the hours they expect to be paid for.
+They can see each other's work, so they can help each other out.
 
-**Tier A — the spine.** The nine screens. Three roles enforced server-side. Effective-dated pay and billing rates that survive a rate change. One monthly invoice allocated across projects. Application spend accumulated across months. A projected ROI range. Deployed to DigitalOcean with dev, staging and production.
+---
 
-**Tier B — the backlog.** Comments on tasks. Responsive, loading, empty and denied states. Multi-client isolation hardening. A record of changes and denials. Weekly submission deadlines and late flags. Pay batches. Rate exceptions. Closed-month corrections. Benefit publishing and versioning.
+## When you have a question, sit in all three chairs
 
-**Senior-owned, never assigned to a trainee.** The authorisation boundary. Data-model invariants. Money math. Timezone logic — the Monday-noon Mountain boundary is a daylight-saving trap that looks small.
+This is the most useful thing in this document.
 
-## Technical decisions
+Before you ask us anything — and before you let the bot decide for you — take
+the question and ask it three times:
 
-| | | Why |
-|---|---|---|
-| **Database** | **Postgres** | Settles ADR-0004 versus the CMS2 deploy plan in favour of Postgres for new products. MySQL on DigitalOcean has no connection pooling and caps at 75 connections per GiB. Managed Postgres supports pgvector, which the RAG work needs, and PostGIS for ZIG. Migrating the existing MySQL estate stays a separate decision. |
-| **Auth** | **Better Auth, emailed one-time codes. No passwords.** | ADR-0004 rejected the Better Auth adapter *in combination with a bespoke transaction wrapper* whose writes survived a failed operation. That wrapper is being deleted, so the objection goes with it. Passwords cost roughly triple once forgot-password is included, and add stored secrets plus a reset-link takeover surface. |
-| **Email** | Mailpit locally; SMTP on 587 for staging; a transactional provider before the client gets a login | DigitalOcean blocks port 25. |
-| **Hosting** | App Platform, Managed Postgres, autodeploy on push per branch | Custom domains via grey CNAME to `ondigitalocean.app` with DO-issued certificates. **Never A-record to App Platform ingress IPs** — that's Cloudflare Error 1000. Proven in production. |
-| **Stack** | **Open, pending the build challenge** | See below. |
+1. **As the owner.** If this business were yours, what would you want to log
+   into on a Monday morning? What would make you trust the numbers enough to
+   put them in front of a client?
+2. **As the client.** You are paying the invoices. What would you want to see?
+   What would make you feel well spent, or badly spent? What would you be
+   annoyed to find you could not see?
+3. **As a contractor.** You are doing the work and getting paid for it. What
+   do you need to see to do your job? What would you consider none of your
+   business — and what would you be uncomfortable about a colleague seeing?
 
-### The stack question is deliberately open
+Most questions answer themselves once you have done that, because you already
+know what you would want. The ones that survive are the good ones, and those
+are the ones we want to hear.
 
-The three challenge entrants each pick their own stack, justify it, and say how they'd deploy it. We set the standard on 28 September from three real builds rather than from argument.
+**Questions go to ryan@botgui.de and cody@botgui.de. Asking counts in your
+favour.**
 
-**Current lean:** React + Vite + a TypeScript API, Drizzle, Postgres, Better Auth, App Platform. Two deployables rather than one. The case against Next.js isn't quality — it's that the server/client component split is the single thing AI gets wrong most often, and we have a beginner on the team. Open to being wrong; that's what the challenge is for.
+---
 
-## Seed data
+## What is desirable
 
-- Real names and emails for the team — they need to log in, and their own onboarding exercises the invite flow.
-- **Fictional rates and dollar amounts in dev and staging.** Real contractor pay and real client invoice totals go in only after the security pass closes.
-- **No client login until after that security review.** Placeholder executive in dev.
+Wants, not solutions. How you deliver these is your call, and the reasoning is
+what gets read.
 
-The arithmetic doesn't care whether the numbers are real.
+- Create a client. Create a project. Create features and tasks underneath it.
+- Size the work — story points, t-shirt sizes, hours, whatever you can defend.
+- Assign work to a person, and let them update it as it moves.
+- Contractors record the hours they expect to be paid for.
+- The owner approves things. Approval should mean something.
+- A month's total client billing becomes cost attributed to projects.
+- Project cost rolls up so you can see what an application has cost.
+- The client sees progress, spend, and some sense of whether it was worth it.
+- Nobody sees what they should not see. **This is the hard part**, and it is
+  worth more than any screen.
 
-## Explicitly out
+## Not in this box
 
-Importing historical data from CMS2, Time Tracker, GitHub or BOS · replacing accounting, payroll or AP/AR · executing payments or invoicing · internal margin or loaded labour cost · claiming realised ROI, as opposed to a projected range · public signup or password login · document storage · client chat · a mobile app.
+Do not spend your two weeks on: importing real historical data · replacing
+accounting, payroll or invoicing · taking payments · a mobile app · document
+storage · chat.
+
+**Your stack is your choice** — framework, database, styling, testing, all of
+it. Say why you picked it. That reasoning counts.
+
+---
 
 ## Why this document is short
 
 An earlier attempt at these requirements ran to twelve numbered requirements
 and produced fourteen source files and thirteen tests **of its own process**
-in five days. Nothing shipped. That is the failure mode this brief exists to
-avoid, and it is the reason you get a page rather than a specification.
+in five days. Nothing shipped.
 
 The gaps in here are not oversights. Finding them, naming them, and deciding
 what to do about them is the exercise.
-
-## Before you ask a question — sit in the owner's chair
-
-Imagine the business is yours. You run a software development company —
-contractors do the work, clients pay for it, and the money has to make sense
-at the end of the month.
-
-Answer these two for yourself first, in writing:
-
-1. **What would you want to log into on a Monday morning** to create work,
-   size it, and assign it to people on your team?
-2. **What would you want your client to be able to see** — and what would you
-   never want them to see?
-
-Most questions dissolve once you have done that, because you already know
-what you would want. The ones that survive are the good ones.
-
-Send those to **ryan@botgui.de** and **cody@botgui.de**. Questions are
-welcome and they count in your favor.
-
-## Open
-
-- Stack, until 28 September.
-- Whether the winning challenge codebase becomes the foundation, after we verify it runs on our infrastructure.
-- Whether the existing MySQL estate migrates to Postgres, and when.

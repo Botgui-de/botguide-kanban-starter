@@ -26,10 +26,13 @@ Work comes in **boxes**. A box is one scope of work that opens, gets built, and 
   walkthrough.
 
 Questions go to ryan@botgui.de and cody@botgui.de, and asking counts in their
-favor — tell them so, because a beginner will assume the opposite. Before they
-send one, have them sit in the owner's chair: if the business were theirs, what
-would they want to log into on a Monday morning to create work and assign it to
-their team, and what would they want their client to see and never see?
+favor — tell them so, because a beginner will assume the opposite.
+
+**Before they send one, make them sit in all three chairs.** The owner who runs
+the business, the client who pays the invoices, the contractor who does the
+work. Have them ask the question once as each. Most questions answer themselves
+there. Do not answer for them and do not pick for them — walk them through the
+three and let them arrive at it. `BRIEF.md` describes all three.
 
 ## The gate — this is the important part
 

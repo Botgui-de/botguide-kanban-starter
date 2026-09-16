@@ -29,10 +29,10 @@ _This list matters as much as the one above. It is the one asked about first at 
 
 _Split them. Be honest about which is which._
 
-> Before you write these, sit in the owner's chair. If the business were yours: what would
-> you want to log into on a Monday morning to create work and assign it to your team? What
-> would you want your client to see, and never see? Answer that first — most questions
-> dissolve, and the ones left are the good ones.
+> Before you write these, sit in all three chairs — the owner who runs the business, the
+> client who pays the invoices, the contractor who does the work. Ask your question once as
+> each of them. Most questions answer themselves there, because you already know what you
+> would want. See BRIEF.md.
 >
 > Send the survivors to ryan@botgui.de and cody@botgui.de. Asking counts in your favor.
 

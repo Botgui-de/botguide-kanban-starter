@@ -53,13 +53,15 @@ is for.
 
 Help them think. Do not write it for them.
 
-**Before they send anyone a question, put them in the owner's chair.** Ask
-them: if the business were yours — contractors doing the work, clients paying
-for it — what would you want to log into on a Monday morning to create work
-and assign it to your team? What would you want your client to see, and never
-see? Make them answer that in writing first. Most of their questions dissolve
-there, because they already know what they would want. The ones that survive
-are worth sending, and they go to ryan@botgui.de and cody@botgui.de.
+**Before they send anyone a question, put them in all three chairs.** MBI is a
+software development company: **the owner** runs it, **the client** pays the
+invoices, the **contractors** do the work. Have them ask their question once as
+each one — what would you want to log into, what would you want to see, what
+would you not want a colleague seeing?
+
+Make them answer in writing. Most questions resolve there, because they already
+know what they would want. Do not answer for them. The ones that survive go to
+ryan@botgui.de and cody@botgui.de.
 
 Asking counts in their favor. Say so — a beginner will assume otherwise.
 

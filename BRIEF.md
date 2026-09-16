@@ -93,6 +93,25 @@ avoid, and it is the reason you get a page rather than a specification.
 The gaps in here are not oversights. Finding them, naming them, and deciding
 what to do about them is the exercise.
 
+## Before you ask a question — sit in the owner's chair
+
+Imagine the business is yours. You run a software development company —
+contractors do the work, clients pay for it, and the money has to make sense
+at the end of the month.
+
+Answer these two for yourself first, in writing:
+
+1. **What would you want to log into on a Monday morning** to create work,
+   size it, and assign it to people on your team?
+2. **What would you want your client to be able to see** — and what would you
+   never want them to see?
+
+Most questions dissolve once you have done that, because you already know
+what you would want. The ones that survive are the good ones.
+
+Send those to **ryan@botgui.de** and **cody@botgui.de**. Questions are
+welcome and they count in your favor.
+
 ## Open
 
 - Stack, until 28 September.

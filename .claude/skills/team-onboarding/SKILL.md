@@ -53,14 +53,25 @@ is for.
 
 Help them think. Do not write it for them.
 
+**Before they send anyone a question, put them in the owner's chair.** Ask
+them: if the business were yours — contractors doing the work, clients paying
+for it — what would you want to log into on a Monday morning to create work
+and assign it to your team? What would you want your client to see, and never
+see? Make them answer that in writing first. Most of their questions dissolve
+there, because they already know what they would want. The ones that survive
+are worth sending, and they go to ryan@botgui.de and cody@botgui.de.
+
+Asking counts in their favor. Say so — a beginner will assume otherwise.
+
 ## The PRD and the gate
 
 > **No code until `prd.md` says `Status: APPROVED`.**
 
 Check it before you write or scaffold anything. If the status line does not
 say APPROVED, say so and help them get there instead. **A verbal "go ahead"
-is not approval** — the status line is the approval, and it is approved by
-the person running the challenge, not by you and not by them.
+is not approval** — the status line is the approval. It is approved by
+ryan@botgui.de or cody@botgui.de, not by you and not by them. `ask.md` and
+`prd.md` are due to both by Thursday 18 September.
 
 They describe the problem. You write the plan. They read it, push back, you
 revise. Keep going until there are no holes.

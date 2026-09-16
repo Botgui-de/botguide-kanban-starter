@@ -1,8 +1,8 @@
-# MBI Portal - Build Challenge Starter
+# MBI Portal — Build Challenge Starter
 
 This repository is your starting point. **Fork it, clone your fork, and build inside it.**
 
-### Getting set up
+## Getting set up
 
 1. Click **Fork** at the top right of this page. That gives you your own copy, under your own GitHub account.
 2. Clone it to your machine:
@@ -20,44 +20,11 @@ git commit --allow-empty -m "chore: starting work"
 
 Yes, really. Version control is a save-game system. It is what lets you experiment without fear.
 
-You need a free GitHub account to fork. That is all - there is nothing to pay for and nothing to install beyond git and your AI tool.
-
-## Start with the brief
-
-Read **[`BRIEF.md`](BRIEF.md)** first. It is one page: what the thing is, the
-three people who use it, the nine screens, and what is explicitly out of
-scope.
-
-It is a brief, not a plan. **The gaps in it are deliberate** — finding them,
-naming them and deciding what to do about them is most of what gets judged.
-Do not paste it into `ask.md` or `prd.md`.
-
-Then write `.projects/0001-get-started/ask.md` in your own words, before you
-open the bot.
-
-## Stuck? Type `/team-onboarding`
-
-This repository ships a skill that walks you through the whole thing — what
-the five files are for, the gate before any code, and the loop. In your AI
-session, type:
-
-```
-/team-onboarding
-```
-
-It works as soon as you open the folder and trust it. Nothing to install.
-
-## One more file: CLAUDE.md
-
-There's a `CLAUDE.md` in the root of this folder. Your AI assistant reads it automatically and it explains the box, the loop, and the gate — so the bot will prompt you for `prd.md` before it starts building, rather than you having to remember.
-
-It also tells the bot to answer "what did you assume that I didn't tell you?" in full, and to say plainly which parts of its own output it's least sure about. Leave it in place.
-
----
+You need a free GitHub account to fork. That is all — there is nothing to pay for and nothing to install beyond git and your AI tool.
 
 ## The box
 
-Work comes in **boxes**. A box is a scope of work that opens, gets built, and closes. Not a phase, not a sprint - a box.
+Work comes in **boxes**. A box is a scope of work that opens, gets built, and closes. Not a phase, not a sprint — a box.
 
 Your box is `0001-get-started`, and it closes when:
 
@@ -65,9 +32,9 @@ Your box is `0001-get-started`, and it closes when:
 
 That is the whole definition of done. Nothing about hosting.
 
-Later, in real work, a new box opens when a person has a problem - a feature they want or a bug they hit. `0002` is that next box. You are not building it. You are only writing down what would go in it.
+Later, in real work, a new box opens when a person has a problem — a feature they want or a bug they hit. `0002` is that next box. You are not building it. You are only writing down what would go in it.
 
-## What is in a box
+### What is in a box
 
 ```
 .projects/0001-get-started/
@@ -79,24 +46,21 @@ Later, in real work, a new box opens when a person has a problem - a feature the
   chat/       raw transcripts from whatever AI tool you used
 ```
 
-## The loop
+Five files. **Each one answers a different question**, and each is read on its own.
 
-Every piece of work runs the same five steps. It will run dozens of times inside this one box.
+## Start with the brief
 
-**Plan -> Prompt -> Test -> Refine -> Commit**
+Read **[`BRIEF.md`](BRIEF.md)** first. It is one page: what the thing is, the three people who use it, the nine screens, and what is explicitly out of scope.
 
-Each turn of the loop gets one line in `log.md` and one commit. Prefix your commit messages with the box number so the history reads as a story:
+It is a brief, not a plan. **The gaps in it are deliberate** — finding them, naming them and deciding what to do about them is most of what gets judged. Do not paste it into `ask.md` or `prd.md`.
 
-```
-feat(0001): sign-in page renders
-fix(0001): contractor could see another contractor's rate
-```
+Then write `.projects/0001-get-started/ask.md` in your own words, before you open the bot.
 
 ## The gate
 
 **No code until `prd.md` says APPROVED.**
 
-Your `0001` is approved personally, by the person who set you this. Send `ask.md` and `prd.md` by **Thursday September 18**.
+Send `ask.md` and `prd.md` to **ryan@botgui.de** and **cody@botgui.de** by **Thursday September 18**. Approval comes back from one of them — a verbal "go ahead" is not approval, and neither is the bot telling you it looks good. The status line is the approval.
 
 Getting there is a conversation, not a document you write once. You describe the problem, the bot writes a plan, you read it, you push back, it revises. You keep going until there are no holes.
 
@@ -104,9 +68,9 @@ Getting there is a conversation, not a document you write once. You describe the
 
 Read it twice, looking for two different things.
 
-**Pass 1 - did it understand me?** Anywhere the PRD says something you did not mean, your ask was ambiguous. Fix the ask.
+**Pass 1 — did it understand me?** Anywhere the PRD says something you did not mean, your ask was ambiguous. Fix the ask.
 
-**Pass 2 - do I understand this?** Look for questions it raises that *you cannot answer*. Those are holes in your own understanding, and you were about to build on top of them. This pass is the valuable one and it is the one people skip.
+**Pass 2 — do I understand this?** Look for questions it raises that *you cannot answer*. Those are holes in your own understanding, and you were about to build on top of them. This pass is the valuable one and it is the one people skip.
 
 ### The question that finds the holes
 
@@ -121,9 +85,22 @@ Everything it lists either goes into the PRD as a stated assumption, or gets ans
 - **Brief-back.** Ask the bot to restate the PRD as a build plan. If the restatement drifts, there is a hole.
 - **Handoff.** Could a different person build roughly the right thing from this alone? If it needs you in the room to explain, it is not approved.
 
+## The loop
+
+Once the PRD is approved, every piece of work runs the same five steps. It will run dozens of times inside this one box.
+
+**Plan → Prompt → Test → Refine → Commit**
+
+Each turn of the loop gets one line in `log.md` and one commit. Prefix your commit messages with the box number so the history reads as a story:
+
+```
+feat(0001): sign-in page renders
+fix(0001): contractor could see another contractor's rate
+```
+
 ## Use AI. All of it.
 
-That is not cheating, it is the job. Everyone has the same models, so the AI is not what separates you - what you ask it to do is.
+That is not cheating, it is the job. Everyone has the same models, so the AI is not what separates you — what you ask it to do is.
 
 Ask it to teach you while it works:
 
@@ -133,6 +110,33 @@ Ask it to teach you while it works:
 
 Those three questions turn every session into a lesson. They also leave a trail in `log.md` that is worth more than the code.
 
+## Two things already in this repo
+
+**`CLAUDE.md`** — your AI assistant reads it automatically. It explains the box, the loop and the gate, so the bot prompts you for `prd.md` before it starts building rather than you having to remember. It also tells the bot to answer *"what did you assume that I didn't tell you?"* in full, and to say plainly which parts of its own output it is least sure about. **Leave it in place.**
+
+**`/team-onboarding`** — a skill that walks you through all of this. Type it in your AI session:
+
+```
+/team-onboarding
+```
+
+It works as soon as you open the folder and trust it. Nothing to install.
+
+## Questions
+
+**Questions are welcome and they count in your favor.** Send them to **ryan@botgui.de** and **cody@botgui.de**.
+
+### Before you ask, sit in the owner's chair
+
+Imagine the business is yours. You run a software development company — contractors do the work, clients pay for it, and the money has to make sense at the end of the month.
+
+Ask yourself two things, and write the answers down:
+
+1. **What would you want to log into on a Monday morning** to create work, size it, and assign it to people on your team?
+2. **What would you want your client to be able to see** — and what would you never want them to see?
+
+Answer those for yourself first. Most questions dissolve at that point, because you already know what you would want. The ones that survive are the good ones, and those are exactly the ones we want to hear.
+
 ## Submitting
 
 **Push your work to your fork and send the link.** That is the whole submission.
@@ -141,16 +145,8 @@ Those three questions turn every session into a lesson. They also leave a trail 
 git push
 ```
 
-> Push as you go, not once at the end. The commit history is part of what gets
-> read - a single commit saying "done" tells us nothing about how you worked,
-> and it is the how we are looking at.
+> Push as you go, not once at the end. The commit history is part of what gets read — a single commit saying "done" tells us nothing about how you worked, and it is the how we are looking at.
 
-Make sure `log.md`, `test.md` and `audit.md` are filled in and pushed. Those
-are read as carefully as the code.
+Make sure `log.md`, `test.md` and `audit.md` are filled in and pushed. Those are read as carefully as the code.
 
-**One bonus rung, optional, noticed:** it is deployed somewhere that can be
-opened in a browser.
-
----
-
-Questions are welcome and they count in your favor. Ask.
+**One bonus rung, optional, noticed:** it is deployed somewhere that can be opened in a browser.

@@ -16,6 +16,21 @@ Work comes in **boxes**. A box is one scope of work that opens, gets built, and 
   chat/       raw transcripts
 ```
 
+## Two files to point them at
+
+- **`BRIEF.md`** at the repo root is what they are building from. If they have
+  not read it, send them there before anything else. It is a brief, not a
+  plan — the gaps in it are deliberate.
+- **`/team-onboarding`** is a skill in this repo that walks them through the
+  whole thing. Suggest it when they seem lost rather than improvising your own
+  walkthrough.
+
+Questions go to ryan@botgui.de and cody@botgui.de, and asking counts in their
+favor — tell them so, because a beginner will assume the opposite. Before they
+send one, have them sit in the owner's chair: if the business were theirs, what
+would they want to log into on a Monday morning to create work and assign it to
+their team, and what would they want their client to see and never see?
+
 ## The gate — this is the important part
 
 **Do not write application code until `prd.md` says `Status: APPROVED`.**

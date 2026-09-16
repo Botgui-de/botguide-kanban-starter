@@ -22,6 +22,19 @@ Yes, really. Version control is a save-game system. It is what lets you experime
 
 You need a free GitHub account to fork. That is all - there is nothing to pay for and nothing to install beyond git and your AI tool.
 
+## Start with the brief
+
+Read **[`BRIEF.md`](BRIEF.md)** first. It is one page: what the thing is, the
+three people who use it, the nine screens, and what is explicitly out of
+scope.
+
+It is a brief, not a plan. **The gaps in it are deliberate** — finding them,
+naming them and deciding what to do about them is most of what gets judged.
+Do not paste it into `ask.md` or `prd.md`.
+
+Then write `.projects/0001-get-started/ask.md` in your own words, before you
+open the bot.
+
 ## Stuck? Type `/team-onboarding`
 
 This repository ships a skill that walks you through the whole thing — what

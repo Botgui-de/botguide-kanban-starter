@@ -22,6 +22,18 @@ Yes, really. Version control is a save-game system. It is what lets you experime
 
 You need a free GitHub account to fork. That is all - there is nothing to pay for and nothing to install beyond git and your AI tool.
 
+## Stuck? Type `/team-onboarding`
+
+This repository ships a skill that walks you through the whole thing — what
+the five files are for, the gate before any code, and the loop. In your AI
+session, type:
+
+```
+/team-onboarding
+```
+
+It works as soon as you open the folder and trust it. Nothing to install.
+
 ## One more file: CLAUDE.md
 
 There's a `CLAUDE.md` in the root of this folder. Your AI assistant reads it automatically and it explains the box, the loop, and the gate — so the bot will prompt you for `prd.md` before it starts building, rather than you having to remember.

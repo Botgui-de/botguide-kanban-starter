@@ -1,134 +1,81 @@
 # MBI Portal — The Brief
 
-**Read this, then write `.projects/0001-get-started/ask.md` in your own words.**
+Read this, then write `.projects/0001-get-started/ask.md` in your own words.
 
-This is the brief, not the plan. Turning it into a plan is your job — that is
-`prd.md`, and it is most of what you are being judged on. Do not copy this
-document into either file.
-
-It is deliberately short. **The gaps are the exercise.**
+This is the brief, not the plan. Writing the plan is your job. It's short on purpose — the gaps are the exercise.
 
 ---
 
 ## The ask, in the owner's words
 
-> I'd like to have a portal where I can log in and the owner of MBI, or the
-> client, can log in. As the MBI owner, I can create a client and contractor
-> for MBI, create a project, a task, story points, and assign it to a
-> contractor at MBI. The client can log in, and he can view his projects in progress, next
-> up, and backlog, and see spend and ROI per application.
+> I'd like to have a portal where I can log in and the owner of MBI, or the client, can log in. As the MBI owner, I can create a client and contractor for MBI, create a project, a task, story points, and assign it to a contractor at MBI. The client can log in, and he can view his projects in progress, next up, and backlog.
 >
-> You'll be using data from what you already know about the projects and the
-> time spent on the projects, and then, based on the total billing for the
-> month, apply that dollar amount as cost to that project.
->
-> I will have all role privileges, so I can approve everything during the
-> project.
+> I will have all role privileges, so I can approve everything during the project.
 >
 > MBI stands for MegaBot Industries.
 
-That is the whole request. It is about 130 words and it is genuinely all you
-are getting — not because we are being coy, but because that is what a real
-request looks like when it arrives.
+That's the whole request. Real requests arrive about this long.
 
-**MBI is a software development company.** It builds software for clients.
+MBI is a software development company. It builds software for clients.
 
-> **Everyone who does the work at MBI is a contractor. There are no employees,
-> and there is no plan for any.** Do not model an employee, do not call anyone
-> an employee, and do not build anything that assumes payroll. This is not a
-> naming preference — it is how the business is actually structured, and
-> getting it wrong produces the wrong data model.
+> **Everyone who does the work at MBI is a contractor. There are no employees.** Don't build an `Employee` model and don't assume payroll. This is how the company actually works, and getting it wrong means the data model is wrong underneath everything else.
 
 ---
 
 ## The three people
 
-Everything hard about this job lives in the difference between these three.
-
 ### The owner
-
-Runs the business. Creates the work, sizes it, assigns it, approves
-everything, and prepares what the client sees each month. Sees everything,
-always.
+Runs the business. Creates projects and tasks, sizes them, assigns them, approves work. Sees everything.
 
 ### The client
-
-Pays the invoices. Wants to know what is being built, how it is going, and
-whether it was worth the money. Sees their own work and their own spend.
+Wants to know what's being built for them and how it's going. Sees their own projects — in progress, next up, backlog.
 
 ### The contractors
-
-Do the work. Update their tasks, report the hours they expect to be paid for.
-They can see each other's work, so they can help each other out.
+Do the work. Update their tasks as things move. They can see each other's work so they can help each other out.
 
 ---
 
 ## When you have a question, sit in all three chairs
 
-This is the most useful thing in this document.
+Ask it three times before you send it:
 
-Before you ask us anything — and before you let the bot decide for you — take
-the question and ask it three times:
+1. **As the owner** — if this business were yours, what would you want to open on a Monday morning?
+2. **As the client** — what would you want to see? What would annoy you if you couldn't?
+3. **As a contractor** — what do you need to do your job? What would you rather a colleague couldn't see?
 
-1. **As the owner.** If this business were yours, what would you want to log
-   into on a Monday morning? What would make you trust the numbers enough to
-   put them in front of a client?
-2. **As the client.** You are paying the invoices. What would you want to see?
-   What would make you feel well spent, or badly spent? What would you be
-   annoyed to find you could not see?
-3. **As a contractor.** You are doing the work and getting paid for it. What
-   do you need to see to do your job? What would you consider none of your
-   business — and what would you be uncomfortable about a colleague seeing?
-
-Most questions answer themselves once you have done that, because you already
-know what you would want. The ones that survive are the good ones, and those
-are the ones we want to hear.
-
-**Questions go to ryan@botgui.de and cody@botgui.de. Asking counts in your
-favour.**
+Most questions answer themselves. Send the ones that don't, to **ryan@botgui.de** and **cody@botgui.de**. Asking counts in your favour.
 
 ---
 
-## What is desirable
+## What's wanted
 
-Wants, not solutions. How you deliver these is your call, and the reasoning is
-what gets read.
+These are wants, not instructions. How you build them is your call, and your reasoning is what gets read.
 
-- Create a client. Create a project. Create features and tasks underneath it.
-- Size the work — story points, t-shirt sizes, hours, whatever you can defend.
-- Assign work to a person, and let them update it as it moves.
-- Contractors record the hours they expect to be paid for.
-- The owner approves things. Approval should mean something.
-- A month's total client billing becomes cost attributed to projects.
-- Project cost rolls up so you can see what an application has cost.
-- The client sees progress, spend, and some sense of whether it was worth it.
-- Nobody sees what they should not see. **This is the hard part**, and it is
-  worth more than any screen.
+- Create a client. Create a project. Create features and tasks under it.
+- Size the work — story points, t-shirt sizes, whatever you can defend.
+- Assign work to a person. Let them update it as it moves.
+- The owner approves things, and approval means something.
+- The client sees their projects: in progress, next up, backlog.
+- **Nobody sees what they shouldn't.** This is the hard part and it's worth more than any screen.
 
-**It has to ship with seed data.** Enough that every screen shows
-something real — projects underway, tasks assigned, hours logged, a month's
-billing turned into cost. Whoever opens it should log in as each of the three
-and see a working picture without having to create anything first.
+### It has to ship with seed data
 
-An empty application cannot be judged and cannot be demonstrated. Seeding it
-is part of the build, not an extra.
+Enough that every screen shows something real — projects underway, tasks assigned, work in each state. Anyone opening it should log in as each of the three and see a working picture without creating anything first.
+
+An empty app can't be judged or demonstrated, so seeding it is part of the build.
 
 ## Not in this box
 
-Do not spend your two weeks on: importing real historical data · replacing
-accounting, payroll or invoicing · taking payments · a mobile app · document
-storage · chat.
+No money. No hours, rates, billing, invoices, cost or ROI — that's a later box and it's out of scope here.
 
-**Your stack is your choice** — framework, database, styling, testing, all of
-it. Say why you picked it. That reasoning counts.
+Also out: importing real data, taking payments, a mobile app, document storage, chat.
+
+**Your stack is your choice** — framework, database, styling, testing. Say why you picked it. That reasoning counts.
 
 ---
 
-## Why this document is short
+## Why this is short
 
-An earlier attempt at these requirements ran to twelve numbered requirements
-and produced fourteen source files and thirteen tests **of its own process**
-in five days. Nothing shipped.
+An earlier version of these requirements ran to twelve numbered items. It produced fourteen source files and thirteen tests of its own process in five days, and shipped nothing.
 
-The gaps in here are not oversights. Finding them, naming them, and deciding
-what to do about them is the exercise.
+The gaps here aren't oversights. Finding them and deciding what to do about them is the exercise.

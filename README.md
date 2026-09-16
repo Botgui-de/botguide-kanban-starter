@@ -1,11 +1,11 @@
 # MBI Portal — Build Challenge Starter
 
-This repository is your starting point. **Fork it, clone your fork, and build inside it.**
+Fork this repo, clone your fork, and build inside it.
 
 ## Getting set up
 
-1. Click **Fork** at the top right of this page. That gives you your own copy, under your own GitHub account.
-2. Clone it to your machine:
+1. Click **Fork** at the top right. That gives you your own copy under your own GitHub account.
+2. Clone it:
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/mbi-portal-starter.git
@@ -18,139 +18,116 @@ cd mbi-portal-starter
 git commit --allow-empty -m "chore: starting work"
 ```
 
-Yes, really. Version control is a save-game system. It is what lets you experiment without fear.
+Version control is a save-game system. It's what lets you experiment without fear.
 
-You need a free GitHub account to fork. That is all — there is nothing to pay for and nothing to install beyond git and your AI tool.
+You need a free GitHub account to fork. Nothing to pay for, nothing to install beyond git and your AI tool.
+
+## What you're building
+
+Read **[`BRIEF.md`](BRIEF.md)**. It has the ask, the three people who use it, and what's wanted.
+
+Then write `.projects/0001-get-started/ask.md` in your own words, before you open the bot.
+
+**If you have a question, `BRIEF.md` tells you what to do first** — ask it as the owner, as the client, and as a contractor. Most questions answer themselves that way. Send the rest to **ryan@botgui.de** and **cody@botgui.de**. Asking counts in your favour.
 
 ## The box
 
-Work comes in **boxes**. A box is a scope of work that opens, gets built, and closes. Not a phase, not a sprint — a box.
+Work comes in **boxes**. A box opens, gets built, and closes. Yours is `0001-get-started`, and it closes when:
 
-Your box is `0001-get-started`, and it closes when:
+> **The portal runs on your machine, you can log in as all three — owner, client, contractor — and every screen has seed data in it.**
 
-> **The portal runs on your machine, you can log in as all three — the owner,
-> the client, and a contractor — and every screen is populated with seed
-> data.**
+That's the whole definition of done. Nothing about hosting.
 
-That is the whole definition of done. Nothing about hosting.
-
-All three logins have to work, and the app has to come up with enough data in
-it that every screen shows something real. An empty app cannot be judged.
-
-Later, in real work, a new box opens when a person has a problem — a feature they want or a bug they hit. `0002` is that next box. You are not building it. You are only writing down what would go in it.
-
-### What is in a box
+Everything about a box lives in one folder:
 
 ```
 .projects/0001-get-started/
-  ask.md      what is in this box, in YOUR words, before you open the bot
-  prd.md      the bot's version, after the back-and-forth. APPROVED before any code.
-  log.md      every turn of the loop. Decisions, redirections, the times you said no.
+  ask.md      what's in this box, in YOUR words, before you open the bot
+  prd.md      the plan. APPROVED before any code.
+  log.md      every turn of the loop — the bot writes this as you go
   test.md     what you tested, what broke, what you skipped
   audit.md    you read your own code. What would you change?
   chat/       raw transcripts from whatever AI tool you used
 ```
 
-Five files. **Each one answers a different question**, and each is read on its own.
-
-## Start with the brief
-
-Read **[`BRIEF.md`](BRIEF.md)** first. It is short on purpose: the owner's original request in his own words, the three people who use it, what is desirable, and what is not in this box.
-
-It is a brief, not a plan. **The gaps in it are deliberate** — finding them, naming them and deciding what to do about them is most of what gets judged. Do not paste it into `ask.md` or `prd.md`.
-
-Then write `.projects/0001-get-started/ask.md` in your own words, before you open the bot.
+`.projects/0002-next/ask.md` is the next box. You're not building it — you're scoping it.
 
 ## The gate
 
 **No code until `prd.md` says APPROVED.**
 
-Send `ask.md` and `prd.md` to **ryan@botgui.de** and **cody@botgui.de** by the date you were given — and send it as soon as it is ready rather than on the day, because turnaround varies and nothing else starts until it comes back. Approval comes back from one of them — a verbal "go ahead" is not approval, and neither is the bot telling you it looks good. The status line is the approval.
+Send `ask.md` and `prd.md` to **ryan@botgui.de** and **cody@botgui.de**. Send them as soon as they're ready rather than on the deadline — turnaround varies, and nothing starts until approval comes back.
 
-Getting there is a conversation, not a document you write once. You describe the problem, the bot writes a plan, you read it, you push back, it revises. You keep going until there are no holes.
+Getting there is a conversation. You describe the problem, the bot writes a plan, you read it, you push back, it revises. Keep going until there are no holes.
 
-### Two passes when you read the PRD
+### Read the PRD twice
 
-Read it twice, looking for two different things.
+**Did it understand me?** Anywhere it says something you didn't mean, your ask was ambiguous. Fix the ask.
 
-**Pass 1 — did it understand me?** Anywhere the PRD says something you did not mean, your ask was ambiguous. Fix the ask.
+**Do I understand this?** Look for questions it raises that *you can't answer*. Those are holes in your own understanding. This is the pass people skip.
 
-**Pass 2 — do I understand this?** Look for questions it raises that *you cannot answer*. Those are holes in your own understanding, and you were about to build on top of them. This pass is the valuable one and it is the one people skip.
-
-### The question that finds the holes
-
-Before you approve anything, ask the bot:
+### Then ask the bot
 
 > **"What did you assume that I didn't tell you?"**
 
-Everything it lists either goes into the PRD as a stated assumption, or gets answered. This one question does most of the work.
+Everything it lists either goes into the PRD as a stated assumption or gets answered. This one question does most of the work.
 
-### Two tests for "no holes"
+Two more checks:
 
-- **Brief-back.** Ask the bot to restate the PRD as a build plan. If the restatement drifts, there is a hole.
-- **Handoff.** Could a different person build roughly the right thing from this alone? If it needs you in the room to explain, it is not approved.
+- **Brief-back** — ask it to restate the PRD as a build plan. If the restatement drifts, there's a hole.
+- **Handoff** — could someone else build roughly the right thing from this alone? If it needs you in the room, it isn't approved.
 
 ## The loop
 
-Once the PRD is approved, every piece of work runs the same five steps. It will run dozens of times inside this one box.
+Once the PRD is approved, every piece of work runs the same five steps:
 
 **Plan → Prompt → Test → Refine → Commit**
 
-Each turn of the loop gets one line in `log.md` and one commit. Prefix your commit messages with the box number so the history reads as a story:
+It runs dozens of times inside one box. Each turn gets one line in `log.md` and one commit.
+
+**The bot keeps `log.md` current.** It writes an entry each turn — what you were trying to do, what happened, what you decided, and the times you rejected what it gave you. Your job is to check it says what actually happened, not to write it from scratch at the end.
+
+Prefix commits with the box number so the history reads as a story:
 
 ```
 feat(0001): sign-in page renders
-fix(0001): contractor could see another contractor's rate
+fix(0001): contractor could see another contractor's tasks
 ```
 
 ## Use AI. All of it.
 
-That is not cheating, it is the job. Everyone has the same models, so the AI is not what separates you — what you ask it to do is.
+That's not cheating, it's the job. Everyone has the same models. What separates you is what you ask them to do.
 
 Ask it to teach you while it works:
 
-- **Why did you choose this instead of the alternative? What are the trade-offs?**
+- **Why this instead of the alternative? What are the trade-offs?**
 - **Show me a completely different way to write this.**
 - **What should I learn next to understand this better?**
 
-Those three questions turn every session into a lesson. They also leave a trail in `log.md` that is worth more than the code.
+Those three turn every session into a lesson, and they leave a trail in `log.md` worth more than the code.
 
-## Two things already in this repo
+## Two files already here
 
-**`CLAUDE.md`** — your AI assistant reads it automatically. It explains the box, the loop and the gate, so the bot prompts you for `prd.md` before it starts building rather than you having to remember. It also tells the bot to answer *"what did you assume that I didn't tell you?"* in full, and to say plainly which parts of its own output it is least sure about. **Leave it in place.**
+**`CLAUDE.md`** — your AI assistant reads it automatically. It holds the gate, the box convention, and the rule that everyone at MBI is a contractor. Leave it in place.
 
-**`/team-onboarding`** — a skill that walks you through all of this. Type it in your AI session:
+**`/team-onboarding`** — type it in your AI session and it walks you through all of this. Nothing to install.
 
-```
-/team-onboarding
-```
+## Tell us what didn't make sense
 
-It works as soon as you open the folder and trust it. Nothing to install.
+**[`FEEDBACK.md`](FEEDBACK.md)** is where you record where these instructions let you down, and which AI skills you used. It isn't scored and it isn't part of your box.
 
-## Questions
-
-**Questions are welcome and they count in your favor.** Send them to **ryan@botgui.de** and **cody@botgui.de**.
-
-### Before you ask, sit in all three chairs
-
-MBI is a software development company. Three people use this thing: **the owner** who runs it, **the client** who pays for it, and **the contractors** who do the work. Everything hard about the job lives in the difference between them.
-
-Take the question and ask it three times — **as the owner** (if this business were yours, what would you want to log into on a Monday morning, and what would make you trust the numbers enough to show a client?), **as the client** (you pay the invoices — what would you want to see, and what would annoy you to find you couldn't?), and **as a contractor** (you do the work and get paid for it — what do you need to see, and what would you be uncomfortable about a colleague seeing?).
-
-Write the answers down. Most questions answer themselves at that point, because you already know what you'd want. The ones that survive are the good ones, and those are exactly the ones we want to hear.
-
-`BRIEF.md` has more on the three of them.
+You're the first people to use any of this. Where it's confusing or wrong, that's our problem, not yours — but we only find out if you write it down. Your assistant will offer to log things as you go. Let it.
 
 ## Submitting
 
-**Push your work to your fork and send the link** to **ryan@botgui.de** and **cody@botgui.de** by the date you were given. That is the whole submission.
+Push to your fork, then send the link to **ryan@botgui.de** and **cody@botgui.de**.
 
 ```bash
 git push
 ```
 
-> Push as you go, not once at the end. The commit history is part of what gets read — a single commit saying "done" tells us nothing about how you worked, and it is the how we are looking at.
+**Push after each feature or fix**, not once at the end. Small working pieces keep the work modular, make it easy to roll back a bad change, and let us see the build as it happens.
 
-Make sure `log.md`, `test.md` and `audit.md` are filled in and pushed. Those are read as carefully as the code. `FEEDBACK.md` too — that one is for us.
+Make sure `log.md`, `test.md` and `audit.md` are filled in and pushed. They're read as carefully as the code. `FEEDBACK.md` too.
 
-**One bonus rung, optional, noticed:** it is deployed somewhere that can be opened in a browser.
+**One bonus rung, optional, noticed:** it's deployed somewhere that opens in a browser.

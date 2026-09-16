@@ -2,82 +2,69 @@
 
 Instructions for any AI assistant working in this project. Read this first.
 
-## How work is organised here
+## One fact you must not get wrong
 
-Work comes in **boxes**. A box is one scope of work that opens, gets built, and closes. Everything about a box lives in one folder.
+**Everyone who does the work at MBI is a contractor. There are no employees.**
+
+Never generate an `Employee` model, table, type or role. Never assume payroll or employment status. If the person says "employee" out of habit, use "contractor" anyway and tell them once.
+
+This isn't a naming preference. An employee entity makes the data model wrong underneath everything built on top of it.
+
+## No money in this box
+
+No hours, rates, billing, invoices, cost or ROI. If the person asks for any of it, say it's out of scope for `0001` and belongs in a later box.
+
+## How work is organised
+
+Work comes in **boxes**. A box is one scope of work that opens, gets built, and closes. Everything about a box lives in one folder:
 
 ```
 .projects/0001-get-started/
   ask.md      what's in this box, in the human's own words
   prd.md      the plan. APPROVED before any code gets written.
-  log.md      every turn of the loop — decisions, redirections, the times they said no
+  log.md      every turn of the loop — you write this
   test.md     what was tested, what broke, what was skipped
   audit.md    reading the code back. What would change?
   chat/       raw transcripts
 ```
 
-## One fact you must not get wrong
-
-**Everyone who does the work at MBI is a contractor. There are no employees,
-and there is no plan for any.**
-
-Never generate an `Employee` model, table, type, role or label. Never write
-code or copy that assumes payroll, salary, headcount or employment status. If
-the person says "employee" out of habit, say so once and use "contractor"
-anyway.
-
-This is not a naming preference. It is how the business is structured, and an
-employee entity produces a data model that is wrong at the root — which is
-expensive to unpick later and is exactly the kind of silent decision you are
-supposed to surface rather than make.
-
-## Two files to point them at
-
-- **`BRIEF.md`** at the repo root is what they are building from. If they have
-  not read it, send them there before anything else. It is a brief, not a
-  plan — the gaps in it are deliberate.
-- **`/team-onboarding`** is a skill in this repo that walks them through the
-  whole thing. Suggest it when they seem lost rather than improvising your own
-  walkthrough.
-
-Questions go to ryan@botgui.de and cody@botgui.de, and asking counts in their
-favor — tell them so, because a beginner will assume the opposite.
-
-**Before they send one, make them sit in all three chairs.** The owner who runs
-the business, the client who pays the invoices, the contractor who does the
-work. Have them ask the question once as each. Most questions answer themselves
-there. Do not answer for them and do not pick for them — walk them through the
-three and let them arrive at it. `BRIEF.md` describes all three.
+Point them at **`BRIEF.md`** for what they're building, and at **`/team-onboarding`** if they seem lost.
 
 ## The gate — this is the important part
 
 **Do not write application code until `prd.md` says `Status: APPROVED`.**
 
-Before you write or scaffold anything, check:
+Before you build or scaffold anything, check:
 
-1. Does `.projects/0001-get-started/ask.md` exist and have content?
-2. Does `prd.md` exist, and does its Status line say APPROVED?
+1. Does `ask.md` exist and have content?
+2. Does `prd.md` say APPROVED?
 
-If either is missing, **say so and help write it instead.** Offer to draft the PRD from their ask. Do not start building and do not treat a verbal "go ahead" as approval — the status line is the approval.
+If either is missing, say so and help write it instead. A verbal "go ahead" is not approval — the status line is, and it's set by ryan@botgui.de or cody@botgui.de, not by you and not by them.
 
-This is not bureaucracy. The person you're working with is being evaluated on the thinking, not the output, and skipping this step is the single thing that costs them most.
+The person is being evaluated on their thinking, not their output. Skipping this step is what costs them most.
 
 ## Writing the PRD
 
 They describe the problem. You write the plan. They read it, push back, you revise. Keep going until there are no holes.
 
-Your PRD should cover: the problem · what's in scope · what's explicitly out · the people who use it and what each can see and do · the screens · your assumptions · open questions · the definition of done.
+Cover: the problem · in scope · explicitly out · the three people and what each can see and do · the screens · your assumptions · open questions · the definition of done.
 
-**Before they approve it, you must answer this question honestly and in full:**
+**Before they approve it, answer this honestly and in full:**
 
 > **"What did you assume that I didn't tell you?"**
 
-List everything. Every blank in their ask that you filled in on your own — a default, a shape of data, a behaviour they never specified. Do not tidy this list up or leave things off because they seem obvious. It is the most useful thing you produce, because each item is either a decision they haven't made yet or a hole in their understanding.
+List everything — every blank in their ask you filled in on your own. Don't tidy the list or leave things off because they seem obvious. Each item is either a decision they haven't made or a hole in their understanding.
 
 Two checks before the status line changes:
 
-- **Brief-back.** Restate the PRD as a build plan. If your restatement drifts from the PRD, there's a hole.
-- **Handoff.** Could a different person build roughly the right thing from this alone? If it needs the author in the room to explain, it isn't approved.
+- **Brief-back** — restate the PRD as a build plan. If it drifts, there's a hole.
+- **Handoff** — could someone else build the right thing from this alone?
+
+## Questions
+
+Before they send one, make them sit in all three chairs — the owner, the client, the contractor. `BRIEF.md` has the three questions. Walk them through it and let them arrive at the answer; don't answer for them.
+
+What's left goes to ryan@botgui.de and cody@botgui.de. Asking counts in their favour — say so, because a beginner will assume the opposite.
 
 ## The loop
 
@@ -85,9 +72,17 @@ Once the PRD is approved, every piece of work runs the same five steps:
 
 **Plan → Prompt → Test → Refine → Commit**
 
-It runs dozens of times inside one box. Each turn gets one line in `log.md` and one commit.
+Start with the simplest thing that works, then add. A prompt asking for ten things produces a tangle.
 
-Start with the simplest version that works, then add. A prompt asking for ten things at once produces a tangle.
+### log.md is yours to write
+
+**You keep `log.md` current — not them.** Write an entry as each turn of the loop finishes, while it's fresh:
+
+- What they were trying to do, what happened, what they decided
+- **Times they said no** — what you gave them, why they rejected it, what they did instead
+- Choices you made that they didn't specify: a library, a pattern, a shape of data. Say so out loud and note the alternative you didn't pick
+
+Don't wait to be asked and don't reconstruct it at the end — a log written afterwards is obvious to read and worth much less. Tell them when you've written an entry so they can correct it.
 
 ## Commits
 
@@ -95,45 +90,24 @@ Prefix with the box number so the history reads as a story:
 
 ```
 feat(0001): sign-in page renders
-fix(0001): contractor could see another contractor's rate
+fix(0001): contractor could see another contractor's tasks
 ```
 
-Commit at the end of each loop, not at the end of the day.
+Commit at the end of each turn of the loop. Push after each feature or fix, so the work stays modular and a bad change is easy to roll back.
 
-## While you work
+## FEEDBACK.md is yours too
 
-Keep `log.md` current as you go — a reconstruction written at the end is obvious to read and worth much less.
+`FEEDBACK.md` records where **our instructions** failed, and which skills got used. It isn't scored and isn't part of their box. They'll forget it exists; you won't.
 
-When they reject something you produced, that goes in `log.md` under "Times I said no," with what you gave them, why they rejected it, and what they did instead.
+Append a row, without being asked, whenever:
 
-When you make a choice they didn't specify — a library, a pattern, a shape of data — say so out loud rather than burying it. Offer the alternative you didn't pick.
-
-If they ask you to explain something you generated, explain what it does and say plainly which parts you are least confident are correct.
-
-## Keep FEEDBACK.md current — this is your job, not theirs
-
-`FEEDBACK.md` at the repo root records where *our instructions* failed, and
-which skills got used. It is not scored and it is not part of their box. They
-will forget it exists; you will not.
-
-**Append a row whenever any of these happens, without being asked:**
-
-- They say an instruction was confusing, ambiguous, or wrong — including in
-  passing, including as a joke, including "wait, so do I..."
-- They look for something that isn't there, or ask you a question this repo
-  should already have answered
+- They say an instruction was confusing, ambiguous or wrong — including in passing
+- They look for something that isn't there, or ask you something this repo should already answer
 - Two of our files contradict each other
 - They get stuck for a while, or nearly give up
-- **A skill is invoked** — `/team-onboarding` or any other. Log which, what
-  for, and whether it actually helped. Log it when it did *not* help; that is
-  the more useful row.
+- **A skill is invoked.** Log which, what for, and whether it helped. Log it when it didn't — that's the more useful row
 
-Write it in their words, not yours. Do not soften it, do not turn a complaint
-into a suggestion, and do not leave it out because it sounds like criticism of
-the people running this — that is exactly what the file is for.
-
-Then tell them you logged it, in one line, and carry on with what they were
-doing. Do not turn it into a conversation.
+Write it in their words. Don't soften a complaint into a suggestion and don't leave it out because it criticises the people running this. Then say you logged it, in one line, and carry on.
 
 ## What not to do
 
@@ -141,4 +115,4 @@ doing. Do not turn it into a conversation.
 - Don't fill silently. If the ask is ambiguous, name the ambiguity rather than picking for them.
 - Don't create files whose only purpose is to describe the process. The five above are enough.
 - Don't build tooling to check their documentation.
-- Don't claim something is tested or verified unless it was. "I didn't test this" is a complete and acceptable answer.
+- Don't claim something is tested unless it was. "I didn't test this" is a complete answer.

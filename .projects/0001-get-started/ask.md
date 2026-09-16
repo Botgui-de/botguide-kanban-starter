@@ -31,7 +31,7 @@ _This list matters as much as the one above. It is the one asked about first at 
 _Split them. Be honest about which is which._
 
 > Before you write these, sit in all three chairs — the owner who runs the business, the
-> client who pays the invoices, the contractor who does the work. Ask your question once as
+> client who the work is for, the contractor who does the work. Ask your question once as
 > each of them. Most questions answer themselves there, because you already know what you
 > would want. See BRIEF.md.
 >

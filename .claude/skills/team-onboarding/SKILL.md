@@ -165,7 +165,8 @@ part of their box.
 - [ ] `0002-next/ask.md` scopes the next box without building it
 - [ ] `FEEDBACK.md` has what didn't make sense, the skills they used, and
       the one-thing answer
-- [ ] Everything is pushed to their fork
+- [ ] Everything is pushed to their fork, and the link sent to
+      ryan@botgui.de and cody@botgui.de by **end of day Friday 25 September**
 
 The question they will be asked is always the same: **"How did you verify
 this?"** — and *"I didn't"* means it is not done.

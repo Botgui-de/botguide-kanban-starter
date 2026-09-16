@@ -50,7 +50,7 @@ Five files. **Each one answers a different question**, and each is read on its o
 
 ## Start with the brief
 
-Read **[`BRIEF.md`](BRIEF.md)** first. It is one page: what the thing is, the three people who use it, the nine screens, and what is explicitly out of scope.
+Read **[`BRIEF.md`](BRIEF.md)** first. It is short on purpose: the owner's original request in his own words, the three people who use it, what is desirable, and what is not in this box.
 
 It is a brief, not a plan. **The gaps in it are deliberate** — finding them, naming them and deciding what to do about them is most of what gets judged. Do not paste it into `ask.md` or `prd.md`.
 
@@ -138,7 +138,7 @@ Write the answers down. Most questions answer themselves at that point, because 
 
 ## Submitting
 
-**Push your work to your fork and send the link.** That is the whole submission.
+**Push your work to your fork and send the link** to **ryan@botgui.de** and **cody@botgui.de** by **end of day Friday September 25**. That is the whole submission.
 
 ```bash
 git push

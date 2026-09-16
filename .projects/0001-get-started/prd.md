@@ -1,8 +1,9 @@
 # 0001 Get Started - PRD
 
 **Status:** DRAFT
-<!-- DRAFT -> APPROVED by <name> <date> -> SHIPPED <date> (tag 0001)
-     No code until this line says APPROVED. -->
+<!-- DRAFT -> APPROVED by <ryan|cody> <date> -> SHIPPED <date> (tag 0001)
+     No code until this line says APPROVED.
+     Send this file and ask.md to ryan@botgui.de and cody@botgui.de by Thu Sep 18. -->
 
 > The bot writes this, not you. You describe the problem; it writes the plan; you read it and
 > push back; it revises. Repeat until there are no holes.

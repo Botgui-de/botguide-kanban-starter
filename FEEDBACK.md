@@ -3,7 +3,7 @@
 **This file is about us, not you.** Nothing in it is scored. Say the blunt
 thing.
 
-You are the first three people to use any of this. Where it is confusing,
+You are the first people ever to use any of this. Where it is confusing,
 wrong, or missing, that is a defect in our instructions — and the only way we
 find out is if you write it down while it is annoying you. A week later you
 will have forgotten, or worse, you will have decided it was your fault.

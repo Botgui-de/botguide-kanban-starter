@@ -105,6 +105,14 @@ what gets read.
 - Nobody sees what they should not see. **This is the hard part**, and it is
   worth more than any screen.
 
+**It has to ship with seed data.** Enough that every screen shows
+something real — projects underway, tasks assigned, hours logged, a month's
+billing turned into cost. Whoever opens it should log in as each of the three
+and see a working picture without having to create anything first.
+
+An empty application cannot be judged and cannot be demonstrated. Seeding it
+is part of the build, not an extra.
+
 ## Not in this box
 
 Do not spend your two weeks on: importing real historical data · replacing

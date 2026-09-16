@@ -28,9 +28,14 @@ Work comes in **boxes**. A box is a scope of work that opens, gets built, and cl
 
 Your box is `0001-get-started`, and it closes when:
 
-> **The portal runs on your machine and you can log in as all three people.**
+> **The portal runs on your machine, you can log in as all three — the owner,
+> the client, and a contractor — and every screen is populated with seed
+> data.**
 
 That is the whole definition of done. Nothing about hosting.
+
+All three logins have to work, and the app has to come up with enough data in
+it that every screen shows something real. An empty app cannot be judged.
 
 Later, in real work, a new box opens when a person has a problem — a feature they want or a bug they hit. `0002` is that next box. You are not building it. You are only writing down what would go in it.
 
@@ -60,7 +65,7 @@ Then write `.projects/0001-get-started/ask.md` in your own words, before you ope
 
 **No code until `prd.md` says APPROVED.**
 
-Send `ask.md` and `prd.md` to **ryan@botgui.de** and **cody@botgui.de** by the date you were given. Approval comes back from one of them — a verbal "go ahead" is not approval, and neither is the bot telling you it looks good. The status line is the approval.
+Send `ask.md` and `prd.md` to **ryan@botgui.de** and **cody@botgui.de** by the date you were given — and send it as soon as it is ready rather than on the day, because turnaround varies and nothing else starts until it comes back. Approval comes back from one of them — a verbal "go ahead" is not approval, and neither is the bot telling you it looks good. The status line is the approval.
 
 Getting there is a conversation, not a document you write once. You describe the problem, the bot writes a plan, you read it, you push back, it revises. You keep going until there are no holes.
 

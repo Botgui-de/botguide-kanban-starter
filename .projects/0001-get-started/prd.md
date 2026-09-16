@@ -54,4 +54,5 @@ _How we will know this box can close._
 
 - [ ] The portal runs locally
 - [ ] I can log in as the owner, as a contractor, and as the client
+- [ ] Every screen is populated with seed data
 - [ ]

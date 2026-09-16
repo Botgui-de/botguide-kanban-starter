@@ -34,10 +34,12 @@ Ask which of these is true, then go to that section:
 Work comes in **boxes**. A box is one scope of work that opens, gets built,
 and closes. Theirs is `0001-get-started`, and it closes when:
 
-> **The portal runs on their machine and they can log in as all three
-> people.**
+> **The portal runs on their machine, they can log in as all three — owner,
+> client, contractor — and every screen is populated with seed data.**
 
-That is the entire definition of done. Nothing about hosting.
+That is the entire definition of done. Nothing about hosting. All three logins
+must work, and an empty app cannot be judged, so seeding it is part of the
+build.
 
 Everything about a box lives in one folder. **Five files, and each one
 answers a different question:**
@@ -161,7 +163,7 @@ part of their box.
 
 "Done" is not "I finished typing." Before they call it finished:
 
-- [ ] It runs, and they can log in as all three people
+- [ ] It runs, all three logins work, and every screen has seed data in it
 - [ ] `test.md` says what they tested, **how they checked it**, and what
       broke
 - [ ] `audit.md` says what they read, what they would change, and what they

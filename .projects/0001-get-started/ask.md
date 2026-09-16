@@ -17,8 +17,9 @@ _The three people. For each: why they open it, what they see, and what they must
 
 ## What has to work for this box to close
 
-_The portal runs on my machine and I can log in as all three people. Add anything else you
-are committing to - but be careful. Everything you add here is something you have to finish._
+_The portal runs on my machine, I can log in as all three - owner, client, contractor - and
+every screen is populated with seed data. Add anything else you are committing to - but be
+careful. Everything you add here is something you have to finish._
 
 ## What I am deliberately NOT building
 

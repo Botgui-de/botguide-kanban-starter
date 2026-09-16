@@ -1,6 +1,8 @@
 # 0001 Get Started - The Ask
 
-> Write this BEFORE you open the bot. In your own words. Do not paste the brief in here.
+> Read the brief first: [`BRIEF.md`](../../BRIEF.md) in the repo root.
+>
+> Then write this BEFORE you open the bot. In your own words. Do not paste the brief in here.
 >
 > Restating the ask yourself is the first real test: if you cannot say what you are building
 > without looking at his email, you do not understand it yet. Delete this block when you write.

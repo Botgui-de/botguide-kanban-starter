@@ -5,7 +5,7 @@
 > Then write this BEFORE you open the bot. In your own words. Do not paste the brief in here.
 >
 > Restating the ask yourself is the first real test: if you cannot say what you are building
-> without looking at his email, you do not understand it yet. Delete this block when you write.
+> without re-reading the brief, you do not understand it yet. Delete this block when you write.
 
 ## What I am building
 

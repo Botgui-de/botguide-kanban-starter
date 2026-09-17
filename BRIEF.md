@@ -39,6 +39,8 @@ The work is being done for them. Logs in to see how their own projects are going
 
 **Decide what each of them can see and do.** Full authorization hardening is out of scope — but a client is an outside party, and letting one client see another client's work is not a judgement call you get to make freely. Say what you decided and why.
 
+The same goes for how they sign in. **Logging in is the requirement; the method is open.** It's one of the few genuinely free decisions in this brief, so treat it as one — pick an approach, and be able to say what it costs and what it buys.
+
 ## When you have a question, sit in all three chairs
 
 Ask it three times before you send it:
@@ -55,7 +57,7 @@ Most questions answer themselves. Send the ones that don't, to **ryan@botgui.de*
 
 | Feature | Description |
 |---|---|
-| **Log in** | A user logs in with a username and password. They can't reach the application until they're logged in. They can log out. |
+| **Log in** | All three people can log in, and can log out. Nobody reaches the application without logging in. **How you do it is your choice** — username and password, an emailed code, whatever you can defend. Say why you picked it. |
 | **Kanban board** | A view showing tasks in four columns: **To Do · In Progress · Blocked · Completed** |
 | **CRUD client** | Create, read, update, delete a client |
 | **CRUD project** | Create, read, update, delete a project |

@@ -18,6 +18,7 @@ Two things to hold throughout:
 - **Everyone at Botguide is a contractor. There are no employees.** Never scaffold an `Employee` model.
 - **No money in this box.** No hours, rates, billing, cost or ROI. Out of scope.
 - **The stack is fixed**: Next.js App Router, React, TypeScript, MySQL + Drizzle, Tailwind, pnpm. Not their choice, not yours.
+- **Login method is open.** Three people must be able to log in; how is theirs to decide and defend. Don't pick for them.
 
 `CLAUDE.md` has the full rules. This file is the walkthrough.
 

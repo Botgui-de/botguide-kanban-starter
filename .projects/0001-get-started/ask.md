@@ -17,7 +17,7 @@ _The three people. For each: why they open it, what they see, and what they must
 
 ## What has to work for this box to close
 
-_The portal runs on my machine, I can log in as all three — owner, client, contractor — and
+_The Kanban board runs on localhost, I can log in as all three — owner, contractor, client — and
 every screen is populated with seed data. Add anything else you are committing to — but be
 careful. Everything you add here is something you have to finish._
 

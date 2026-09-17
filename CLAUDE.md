@@ -10,6 +10,12 @@ Never generate an `Employee` model, table, type or role. Never assume payroll or
 
 This isn't a naming preference. An employee entity makes the data model wrong underneath everything built on top of it.
 
+## The stack is fixed
+
+Next.js (App Router, server components and server actions, no separate API backend), React, TypeScript, Node.js with pnpm, ESLint, MySQL with Drizzle ORM, Tailwind CSS. `BRIEF.md` has the list.
+
+This is not the person's choice and it is not yours. If they want to use something else, tell them it's fixed and why — a shared stack is what makes the work reviewable across three builds.
+
 ## No money in this box
 
 No hours, rates, billing, invoices, cost or ROI. If the person asks for any of it, say it's out of scope for `0001` and belongs in a later box.

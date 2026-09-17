@@ -52,7 +52,7 @@ _Anything still unanswered. An approved PRD should have none left._
 
 _How we will know this box can close._
 
-- [ ] The portal runs locally
+- [ ] The Kanban board runs on localhost
 - [ ] I can log in as the owner, as a contractor, and as the client
 - [ ] Every screen is populated with seed data
 - [ ]

@@ -1,4 +1,4 @@
-# Botguide Portal — Build Challenge Starter
+# Botguide Kanban — Build Challenge Starter
 
 Fork this repo, clone your fork, and build inside it.
 
@@ -8,8 +8,8 @@ Fork this repo, clone your fork, and build inside it.
 2. Clone it:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/botguide-portal-starter.git
-cd botguide-portal-starter
+git clone https://github.com/YOUR-USERNAME/botguide-kanban-starter.git
+cd botguide-kanban-starter
 ```
 
 3. Commit before you write a line:
@@ -24,19 +24,19 @@ You need a free GitHub account to fork. Nothing to pay for, nothing to install b
 
 ## What you're building
 
-Read **[`BRIEF.md`](BRIEF.md)**. It has the ask, the three people who use it, and what's wanted.
+Read **[`BRIEF.md`](BRIEF.md)**. It has the required features, the three people who use it, the data model, and the tech stack.
 
 Then write `.projects/0001-get-started/ask.md` in your own words, before you open the bot.
 
-**If you have a question, `BRIEF.md` tells you what to do first** — ask it as the owner, as the client, and as a contractor. Most questions answer themselves that way. Send the rest to **ryan@botgui.de** and **cody@botgui.de**. Asking counts in your favour.
+**If you have a question, `BRIEF.md` tells you what to do first** — ask it as the owner, as the contractor, and as the client. Most questions answer themselves that way. Send the rest to **ryan@botgui.de** and **cody@botgui.de**. Asking counts in your favour.
 
 ## The box
 
 Work comes in **boxes**. A box opens, gets built, and closes. Yours is `0001-get-started`, and it closes when:
 
-> **The portal runs on your machine, you can log in as all three — owner, client, contractor — and every screen has seed data in it.**
+> **The Kanban board runs on localhost, you can log in as all three — owner, contractor, client — and every screen has seed data in it.**
 
-That's the whole definition of done. Nothing about hosting.
+That's the whole definition of done. Nothing about deployment.
 
 Everything about a box lives in one folder:
 

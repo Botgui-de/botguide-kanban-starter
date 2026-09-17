@@ -17,6 +17,7 @@ Two things to hold throughout:
 
 - **Everyone at Botguide is a contractor. There are no employees.** Never scaffold an `Employee` model.
 - **No money in this box.** No hours, rates, billing, cost or ROI. Out of scope.
+- **The stack is fixed**: Next.js App Router, React, TypeScript, MySQL + Drizzle, Tailwind, pnpm. Not their choice, not yours.
 
 `CLAUDE.md` has the full rules. This file is the walkthrough.
 
@@ -31,7 +32,7 @@ Ask which of these is true, then go to that section:
 
 ## Start here
 
-Send them to **`BRIEF.md`** first. It has the ask, the three people who use it, and what's wanted. Don't summarise it for them — they need to read it themselves and notice the gaps.
+Send them to **`BRIEF.md`** first. It has the required features, the three people, the data model and the stack. Don't summarise it for them — they need to read it themselves and notice the gaps.
 
 Then explain the box. Their work lives in `.projects/0001-get-started/`, in five files, and **each answers a different question**:
 
@@ -43,7 +44,7 @@ Then explain the box. Their work lives in `.projects/0001-get-started/`, in five
 | `test.md` | Does it work — and how do I know? |
 | `audit.md` | Do I understand what I shipped? |
 
-The box closes when the portal runs, they can log in as all three people, and every screen has seed data in it.
+The box closes when the Kanban board runs on localhost, they can log in as all three — owner, contractor, client — and every screen has seed data in it.
 
 Get them to fill in `ask.md` **before** asking you to build anything — in their own words, not pasted from the brief. If they can't say what they're building without re-reading it, they don't understand it yet. That's what the file is for.
 
@@ -83,7 +84,7 @@ Also log friction as it happens: when something in these instructions confuses t
 
 Before they call it done:
 
-- [ ] It runs, all three logins work, every screen has seed data
+- [ ] It runs on localhost, all three logins work, every screen has seed data
 - [ ] `test.md` says what they tested, **how they checked it**, and what broke
 - [ ] `audit.md` says what they read, what they'd change, what they don't understand yet
 - [ ] `log.md` has the loop, the decisions, and three times they said no

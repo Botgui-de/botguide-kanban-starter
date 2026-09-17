@@ -1,0 +1,32 @@
+# Local MySQL for this project. Nothing here is production-grade and it is not
+# meant to be — these credentials exist so you can get a database running in
+# one command and get on with the build.
+#
+#   docker compose up -d      start it
+#   docker compose down       stop it, keep the data
+#   docker compose down -v    stop it and wipe the data
+
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: botguide-kanban-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: botguide_kanban
+      MYSQL_USER: botguide
+      MYSQL_PASSWORD: botguide
+    ports:
+      # If 3306 is already in use, change the LEFT number to 3307 and update
+      # the port in your .env to match.
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  mysql-data:

@@ -22,7 +22,29 @@ git commit --allow-empty -m "chore: starting work"
 
 Version control is a save-game system. It's what lets you experiment without fear.
 
-You need a free GitHub account to fork. Nothing to pay for, nothing to install beyond git and your AI tool.
+You need a free GitHub account to fork. Nothing to pay for.
+
+### The database
+
+The stack uses MySQL. There's a `docker-compose.yml` here so you don't have to install it yourself:
+
+```bash
+docker compose up -d
+```
+
+That starts MySQL on `localhost:3306` with an empty database called `botguide_kanban`. Then copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+That's it — `DATABASE_URL` is already filled in and matches the container.
+
+`docker compose down` stops it and keeps your data. `docker compose down -v` wipes it and starts clean, which is the quickest way out of a migration you've tangled.
+
+**If port 3306 is already in use**, you probably have MySQL running already. Change the left-hand number in `docker-compose.yml` to `3307:3306` and update the port in `.env` to match.
+
+You'll need Docker Desktop for this. If you'd rather install MySQL directly, that works too — just point `DATABASE_URL` at it.
 
 ## What you're building
 

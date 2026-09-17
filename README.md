@@ -30,7 +30,7 @@ Read **[`BRIEF.md`](BRIEF.md)**. It has the required features, the three people 
 
 Then write `.projects/0001-get-started/ask.md` in your own words, before you open the bot.
 
-**If you get stuck on a question, `BRIEF.md` tells you what to do first** — ask it as the owner, as the contractor, and as the client. Most questions answer themselves that way. Write down the ones that don't; those are the ones worth carrying into a real project.
+**If you get stuck on a question, `BRIEF.md` tells you what to do first** — run it past all three personas: the owner, the contractor, the client. Most questions answer themselves that way. Write down the ones that don't; those are the ones worth carrying into a real project.
 
 ## The box
 
@@ -108,13 +108,17 @@ Ask it to teach you while it works:
 
 Those three turn every session into a lesson, and they leave a trail in `log.md` worth more than the code.
 
-## Two files already here
+## What's already here
+
+**`BRIEF.md`** — what you're building. Read it first.
 
 **`CLAUDE.md`** — your AI assistant reads it automatically. It holds the gate, the box convention, and the rule that everyone at Botguide is a contractor. Leave it in place.
 
 **`/team-onboarding`** — type it in your AI session and it walks you through all of this. Nothing to install.
 
-## Tell us what didn't make sense
+**`FEEDBACK.md`** — notes on anything here that didn't make sense. See below.
+
+## When something here doesn't make sense
 
 **[`FEEDBACK.md`](FEEDBACK.md)** is where you record where these instructions let you down, and which AI skills you used.
 

@@ -67,7 +67,7 @@ Tell them the out-of-scope list matters as much as the scope list. Choosing to b
 
 ### When they have a question
 
-Put them in all three chairs first — the owner, the contractor, the client. `BRIEF.md` has the three questions. Walk them through it; don't answer for them. Have them write down whatever survives — naming an open question is the skill, and it's worth more than a guess.
+Run it past all three personas first — the owner, the contractor, the client. `BRIEF.md` has the three questions. Walk them through it; don't answer for them. Have them write down whatever survives — naming an open question is the skill, and it's worth more than a guess.
 
 ## The loop
 

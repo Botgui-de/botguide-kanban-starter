@@ -68,7 +68,7 @@ Two checks before the status line changes:
 
 ## Questions
 
-Before they send one, make them sit in all three chairs — the owner, the client, the contractor. `BRIEF.md` has the three questions. Walk them through it and let them arrive at the answer; don't answer for them.
+Before they settle one, make them run it past all three personas — the owner, the contractor, the client. `BRIEF.md` has the three questions. Walk them through it and let them arrive at the answer; don't answer for them.
 
 What's left, have them write down rather than guess at. On a real project those go to whoever owns the decision; here, naming them is the exercise.
 

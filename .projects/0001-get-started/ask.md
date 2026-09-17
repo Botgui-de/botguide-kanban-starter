@@ -30,7 +30,7 @@ _This list matters as much as the one above. On a real project it is the first t
 
 _Split them. Be honest about which is which._
 
-> Before you write these, sit in all three chairs — the owner who runs the business, the
+> Before you write these, run each one past all three personas — the owner who runs the business, the
 > client who the work is for, the contractor who does the work. Ask your question once as
 > each of them. Most questions answer themselves there, because you already know what you
 > would want. See BRIEF.md.

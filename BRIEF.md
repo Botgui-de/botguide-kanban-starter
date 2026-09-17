@@ -24,9 +24,9 @@ The **data model** below is given to you. Everything else is yours to decide.
 
 ---
 
-## The three people
+## The three personas
 
-All three log in. Each is a real person with a different job.
+All three log in. Each one wants something different from the same application, and the difference between them is most of the work.
 
 ### The owner
 Runs Botguide. Creates clients, projects, features and tasks, assigns them, and sees everything.
@@ -41,9 +41,9 @@ The work is being done for them. Logs in to see how their own projects are going
 
 The same goes for how they sign in. **Logging in is the requirement; the method is open.** It's one of the few genuinely free decisions in this brief, so treat it as one — pick an approach, and be able to say what it costs and what it buys.
 
-## When you have a question, sit in all three chairs
+## When you have a question, run it past all three personas
 
-Ask it three times before you send it:
+Ask it once as each of them before you decide:
 
 1. **As the owner** — if this business were yours, what would you want to open on a Monday morning?
 2. **As the contractor** — what do you need to do your job? What would you rather a colleague couldn't see?
@@ -66,7 +66,7 @@ Most questions answer themselves. Write down the ones that don't — on a real p
 | **Assign task** | Assign a task to yourself or another user. A task can have no assigned user. |
 | **Change task status** | Move a task between To Do, In Progress, Blocked and Completed |
 | **Drag and drop** | Change a task's status by dragging it between columns on the board |
-| **Story points** | Every task has a story point estimate. Choose from 1–5 in half-point steps. **1 point is a day, 5 is a full week. Botguide sprints are one week.** |
+| **Story points** | Every task has a story point estimate, in half-point steps from 0.5 to 5. **Half a point is half a day, 1 point is a day, 5 is a full week. Botguide sprints are one week.** |
 | **Profile page** | A user has a profile page with their information and settings. |
 
 ### Other views — your call
@@ -87,7 +87,9 @@ Feature 1 of project 1 has nothing to do with feature 1 of project 2.
 
 ## Seed data
 
-It has to ship with enough data that every screen shows something real — clients, projects, features, and tasks spread across all four columns. Anyone opening it should log in as each of the three people and see a working board without creating anything first.
+It has to ship with enough data that every screen shows something real — clients, projects, features, and tasks spread across all four columns.
+
+**Seed the three people too.** Someone opening it fresh needs working credentials for the owner, a contractor and a client, or the three logins can't be shown at all. Put them somewhere obvious — a line in your README is fine.
 
 An empty board can't be demonstrated, so seeding it is part of the build.
 

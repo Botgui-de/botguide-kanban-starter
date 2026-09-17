@@ -1,7 +1,7 @@
 ---
 name: team-onboarding
 description: >-
-  Walks someone through this build challenge — what the five box files are for,
+  Walks someone through this practice project — what the five box files are for,
   the APPROVED gate before any code, and the loop. Triggers on "onboard me",
   "I'm new", "get me started", "what do I do first", "how does this work",
   "where do I start". Does not trigger for debugging application code or
@@ -55,7 +55,7 @@ Help them think. Don't write it for them.
 
 > **No code until `prd.md` says `Status: APPROVED`.**
 
-Check it before you write or scaffold anything. A verbal "go ahead" isn't approval. It's approved by ryan@botgui.de or cody@botgui.de — not by you, not by them.
+Check it before you write or scaffold anything. They approve their own here — nobody else is checking, which makes it easy to skip. Hold it for them.
 
 They describe the problem, you write the plan, they push back, you revise. Then answer, in full:
 
@@ -67,7 +67,7 @@ Tell them the out-of-scope list matters as much as the scope list. Choosing to b
 
 ### When they have a question
 
-Put them in all three chairs first — the owner, the client, the contractor. `BRIEF.md` has the three questions. Walk them through it; don't answer for them. What survives goes to ryan@botgui.de and cody@botgui.de, and asking counts in their favour. Say so — a beginner assumes the opposite.
+Put them in all three chairs first — the owner, the contractor, the client. `BRIEF.md` has the three questions. Walk them through it; don't answer for them. Have them write down whatever survives — naming an open question is the skill, and it's worth more than a guess.
 
 ## The loop
 
@@ -91,7 +91,7 @@ Before they call it done:
 - [ ] `log.md` has the loop, the decisions, and three times they said no
 - [ ] `0002-next/ask.md` scopes the next box without building it
 - [ ] `FEEDBACK.md` is filled in
-- [ ] Everything pushed, link sent to ryan@botgui.de and cody@botgui.de
+- [ ] Everything pushed
 
 The question they'll be asked is always the same: **"How did you verify this?"** — and *"I didn't"* means it isn't done.
 

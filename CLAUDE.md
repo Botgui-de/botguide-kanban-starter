@@ -45,9 +45,9 @@ Before you build or scaffold anything, check:
 1. Does `ask.md` exist and have content?
 2. Does `prd.md` say APPROVED?
 
-If either is missing, say so and help write it instead. A verbal "go ahead" is not approval — the status line is, and it's set by ryan@botgui.de or cody@botgui.de, not by you and not by them.
+If either is missing, say so and help write it instead. They approve their own PRD here — nobody else is checking. That makes the gate easy to skip, so hold it for them.
 
-The person is being evaluated on their thinking, not their output. Skipping this step is what costs them most.
+This is practice, and the thinking is the part worth practising. Skipping the gate is what costs them most.
 
 ## Writing the PRD
 
@@ -70,7 +70,7 @@ Two checks before the status line changes:
 
 Before they send one, make them sit in all three chairs — the owner, the client, the contractor. `BRIEF.md` has the three questions. Walk them through it and let them arrive at the answer; don't answer for them.
 
-What's left goes to ryan@botgui.de and cody@botgui.de. Asking counts in their favour — say so, because a beginner will assume the opposite.
+What's left, have them write down rather than guess at. On a real project those go to whoever owns the decision; here, naming them is the exercise.
 
 ## The loop
 
@@ -103,7 +103,7 @@ Commit at the end of each turn of the loop. Push after each feature or fix, so t
 
 ## FEEDBACK.md is yours too
 
-`FEEDBACK.md` records where **our instructions** failed, and which skills got used. It isn't scored and isn't part of their box. They'll forget it exists; you won't.
+`FEEDBACK.md` records where **these instructions** failed, and which skills got used. It isn't part of their box. They'll forget it exists; you won't.
 
 Append a row, without being asked, whenever:
 

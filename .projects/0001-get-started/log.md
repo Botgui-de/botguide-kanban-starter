@@ -20,8 +20,9 @@ _The choices you made and why. Not what the bot generated — what YOU chose._
 
 ## Times I said no
 
-> At demos you will be asked to show three. What it gave you, why you rejected it, what you
-> did instead. This is the single most important section in the box.
+> Aim for three. What it gave you, why you rejected it, what you did instead. This is the single
+> most important section in the box — it is the clearest evidence that you were directing the
+> work rather than accepting it.
 
 **1.**
 - It gave me:
@@ -41,7 +42,7 @@ _Answers worth keeping from the "why did you choose this", "show me another way"
 
 ## The three questions
 
-> Answer these before you submit. A paragraph each is plenty.
+> Answer these before you close the box. A paragraph each is plenty.
 
 **What did you decide not to build, and why?**
 

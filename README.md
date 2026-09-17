@@ -1,6 +1,8 @@
-# Botguide Kanban — Build Challenge Starter
+# Botguide Kanban — Practice Project
 
 Fork this repo, clone your fork, and build inside it.
+
+**This is practice.** Nothing is being judged, there's nothing to hand in, no deadline, and no prize. Build it because building it teaches you something. The value is the habit, not the hand-off.
 
 ## Getting set up
 
@@ -28,7 +30,7 @@ Read **[`BRIEF.md`](BRIEF.md)**. It has the required features, the three people 
 
 Then write `.projects/0001-get-started/ask.md` in your own words, before you open the bot.
 
-**If you have a question, `BRIEF.md` tells you what to do first** — ask it as the owner, as the contractor, and as the client. Most questions answer themselves that way. Send the rest to **ryan@botgui.de** and **cody@botgui.de**. Asking counts in your favour.
+**If you get stuck on a question, `BRIEF.md` tells you what to do first** — ask it as the owner, as the contractor, and as the client. Most questions answer themselves that way. Write down the ones that don't; those are the ones worth carrying into a real project.
 
 ## The box
 
@@ -56,7 +58,7 @@ Everything about a box lives in one folder:
 
 **No code until `prd.md` says APPROVED.**
 
-Send `ask.md` and `prd.md` to **ryan@botgui.de** and **cody@botgui.de**. Send them as soon as they're ready rather than on the deadline — turnaround varies, and nothing starts until approval comes back.
+**You approve your own.** Nobody is checking, which is exactly why it's worth doing — the discipline is writing a plan and reading it properly before you build, not getting permission.
 
 Getting there is a conversation. You describe the problem, the bot writes a plan, you read it, you push back, it revises. Keep going until there are no holes.
 
@@ -114,20 +116,18 @@ Those three turn every session into a lesson, and they leave a trail in `log.md`
 
 ## Tell us what didn't make sense
 
-**[`FEEDBACK.md`](FEEDBACK.md)** is where you record where these instructions let you down, and which AI skills you used. It isn't scored and it isn't part of your box.
+**[`FEEDBACK.md`](FEEDBACK.md)** is where you record where these instructions let you down, and which AI skills you used.
 
-You're the first people to use any of this. Where it's confusing or wrong, that's our problem, not yours — but we only find out if you write it down. Your assistant will offer to log things as you go. Let it.
+Where it's confusing or wrong, that's a problem with the instructions, not with you. Your assistant will offer to log things as you go. Let it — it's a useful habit, and it's how this gets better for whoever picks it up next.
 
-## Submitting
+## Finishing
 
-Push to your fork, then send the link to **ryan@botgui.de** and **cody@botgui.de**.
+Push as you go. **Push after each feature or fix**, not once at the end — small working pieces keep the work modular and make a bad change easy to roll back.
 
 ```bash
 git push
 ```
 
-**Push after each feature or fix**, not once at the end. Small working pieces keep the work modular, make it easy to roll back a bad change, and let us see the build as it happens.
+Fill in `log.md`, `test.md` and `audit.md` as you go. On a real project they're read as carefully as the code; here they're the part that turns building into learning.
 
-Make sure `log.md`, `test.md` and `audit.md` are filled in and pushed. They're read as carefully as the code. `FEEDBACK.md` too.
-
-**One bonus rung, optional, noticed:** it's deployed somewhere that opens in a browser.
+The box closes when the board runs, the three logins work, and every screen has seed data. Anything past that — deploying it somewhere, extending it — is yours to take as far as you feel like.

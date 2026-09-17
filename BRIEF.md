@@ -2,7 +2,7 @@
 
 Read this, then write `.projects/0001-get-started/ask.md` in your own words.
 
-This is the brief, not the plan. Writing the plan is your job — that's `prd.md`, and it's most of what gets judged.
+This is the brief, not the plan. Writing the plan is your job — that's `prd.md`, and it's where most of the learning is.
 
 ---
 
@@ -49,7 +49,7 @@ Ask it three times before you send it:
 2. **As the contractor** — what do you need to do your job? What would you rather a colleague couldn't see?
 3. **As the client** — what would you want to see? What would annoy you if you couldn't?
 
-Most questions answer themselves. Send the ones that don't, to **ryan@botgui.de** and **cody@botgui.de**. Asking counts in your favour.
+Most questions answer themselves. Write down the ones that don't — on a real project those are the ones you'd take to whoever owns the decision.
 
 ---
 
@@ -89,7 +89,7 @@ Feature 1 of project 1 has nothing to do with feature 1 of project 2.
 
 It has to ship with enough data that every screen shows something real — clients, projects, features, and tasks spread across all four columns. Anyone opening it should log in as each of the three people and see a working board without creating anything first.
 
-An empty board can't be judged or demonstrated, so seeding it is part of the build.
+An empty board can't be demonstrated, so seeding it is part of the build.
 
 ---
 

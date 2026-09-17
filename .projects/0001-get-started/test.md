@@ -2,7 +2,7 @@
 
 **The question this file answers: does it work?**
 
-> "Done" is not "I finished typing." The question you will be asked is always the same:
+> "Done" is not "I finished typing." The question worth asking yourself is always the same:
 > **"How did you verify this?"** — and "I didn't" means it is not done. Delete this block.
 
 ## What I tested
@@ -16,8 +16,8 @@ what each could see" beats "tested login."_
 
 ## What broke
 
-_Including things you broke yourself and fixed. Finding your own problems counts in your
-favor, not against you._
+_Including things you broke yourself and fixed. Finding your own problems is the skill; nobody
+ever got better by not looking._
 
 ## What I did not get to
 

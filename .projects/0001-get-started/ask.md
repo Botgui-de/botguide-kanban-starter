@@ -23,7 +23,7 @@ careful. Everything you add here is something you have to finish._
 
 ## What I am deliberately NOT building
 
-_This list matters as much as the one above. It is the one asked about first at demos:
+_This list matters as much as the one above. On a real project it is the first thing you get asked:
 "What did you decide not to build, and why?"_
 
 ## Questions I need answered before I start
@@ -35,7 +35,7 @@ _Split them. Be honest about which is which._
 > each of them. Most questions answer themselves there, because you already know what you
 > would want. See BRIEF.md.
 >
-> Send the survivors to ryan@botgui.de and cody@botgui.de. Asking counts in your favor.
+> Write down whatever survives. Naming an open question is the skill.
 
 **Blocking** — I cannot start until someone answers this.
 -

@@ -1,8 +1,8 @@
 # Feedback — on our instructions, not on your work
 
-Nothing in this file is scored. It isn't part of your box. Say the blunt thing.
+This file isn't part of your box. Say the blunt thing.
 
-You're the first people to use any of this. Where it's confusing, wrong or missing, that's a problem with our instructions — but we only find out if you write it down while it's still annoying you. A week later you'll have forgotten, or decided it was your fault.
+Where something here is confusing, wrong or missing, that's a problem with the instructions, not with you. Write it down while it's still annoying you — a week later you'll have forgotten, or decided it was your fault.
 
 Fill it in as it happens. Your assistant will offer to log things; let it. Push it with everything else.
 
@@ -50,4 +50,4 @@ _Answer here._
 
 ---
 
-Questions still go to **ryan@botgui.de** and **cody@botgui.de**. This file is for the things that aren't quite questions — the friction you'd normally just absorb.
+This file is for the friction you'd normally just absorb. Noticing it is a habit worth building, and it's how this gets better for whoever picks it up next.

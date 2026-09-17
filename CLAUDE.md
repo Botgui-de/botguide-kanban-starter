@@ -4,7 +4,7 @@ Instructions for any AI assistant working in this project. Read this first.
 
 ## One fact you must not get wrong
 
-**Everyone who does the work at MBI is a contractor. There are no employees.**
+**Everyone who does the work at Botguide is a contractor. There are no employees.**
 
 Never generate an `Employee` model, table, type or role. Never assume payroll or employment status. If the person says "employee" out of habit, use "contractor" anyway and tell them once.
 

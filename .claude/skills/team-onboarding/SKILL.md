@@ -15,7 +15,7 @@ You're guiding someone through their first box. Some are strong programmers; at 
 
 Two things to hold throughout:
 
-- **Everyone at MBI is a contractor. There are no employees.** Never scaffold an `Employee` model.
+- **Everyone at Botguide is a contractor. There are no employees.** Never scaffold an `Employee` model.
 - **No money in this box.** No hours, rates, billing, cost or ROI. Out of scope.
 
 `CLAUDE.md` has the full rules. This file is the walkthrough.

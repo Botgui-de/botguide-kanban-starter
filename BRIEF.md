@@ -1,4 +1,4 @@
-# MBI Portal — The Brief
+# Botguide Portal — The Brief
 
 Read this, then write `.projects/0001-get-started/ask.md` in your own words.
 
@@ -8,17 +8,15 @@ This is the brief, not the plan. Writing the plan is your job. It's short on pur
 
 ## The ask, in the owner's words
 
-> I'd like to have a portal where I can log in and the owner of MBI, or the client, can log in. As the MBI owner, I can create a client and contractor for MBI, create a project, a task, story points, and assign it to a contractor at MBI. The client can log in, and he can view his projects in progress, next up, and backlog.
+> I'd like to have a portal where I can log in and the owner of Botguide, or the client, can log in. As the Botguide owner, I can create a client and contractor for Botguide, create a project, a task, story points, and assign it to a contractor at Botguide. The client can log in, and he can view his projects in progress, next up, and backlog.
 >
 > I will have all role privileges, so I can approve everything during the project.
->
-> MBI stands for MegaBot Industries.
 
 That's the whole request. Real requests arrive about this long.
 
-MBI is a software development company. It builds software for clients.
+Botguide is a software development company. It builds software for clients.
 
-> **Everyone who does the work at MBI is a contractor. There are no employees.** Don't build an `Employee` model and don't assume payroll. This is how the company actually works, and getting it wrong means the data model is wrong underneath everything else.
+> **Everyone who does the work at Botguide is a contractor. There are no employees.** Don't build an `Employee` model and don't assume payroll. This is how the company actually works, and getting it wrong means the data model is wrong underneath everything else.
 
 ---
 

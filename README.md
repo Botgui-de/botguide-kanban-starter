@@ -1,4 +1,4 @@
-# MBI Portal — Build Challenge Starter
+# Botguide Portal — Build Challenge Starter
 
 Fork this repo, clone your fork, and build inside it.
 
@@ -8,8 +8,8 @@ Fork this repo, clone your fork, and build inside it.
 2. Clone it:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/mbi-portal-starter.git
-cd mbi-portal-starter
+git clone https://github.com/YOUR-USERNAME/botguide-portal-starter.git
+cd botguide-portal-starter
 ```
 
 3. Commit before you write a line:
@@ -108,7 +108,7 @@ Those three turn every session into a lesson, and they leave a trail in `log.md`
 
 ## Two files already here
 
-**`CLAUDE.md`** — your AI assistant reads it automatically. It holds the gate, the box convention, and the rule that everyone at MBI is a contractor. Leave it in place.
+**`CLAUDE.md`** — your AI assistant reads it automatically. It holds the gate, the box convention, and the rule that everyone at Botguide is a contractor. Leave it in place.
 
 **`/team-onboarding`** — type it in your AI session and it walks you through all of this. Nothing to install.
 
